@@ -32,10 +32,6 @@
   - [Navigation, Layout, and Logistics Support](#navigation-layout-and-logistics-support)
 - [📈 Research Trend](#-research-trend)
 - [⭐ Overview of Primary Evidence Regimes](#-overview-of-primary-evidence-regimes)
-- [💡 Foundational Robotics RL Techniques](#-foundational-robotics-rl-techniques)
-- [📋 Construction Robotics Testbeds and Data Sources](#-construction-robotics-testbeds-and-data-sources)
-- [🛠️ Popular Open-Source Libraries for Robot Learning](#️-popular-open-source-libraries-for-robot-learning)
-- [🖥️ Hardware and Deployment Notes](#️-hardware-and-deployment-notes)
 - [License](#license)
 
 ## 🔥 News & Updates
@@ -171,55 +167,6 @@ Key findings from the primary synthesis set:
 | Material Placement and Lifting | 8/75 | Workflow-coupled lift validation, swing handling, disturbance coverage, and governance |
 | Additive Manufacturing and Surface Processing | 2/75 | Scale-dependent process physics, material rheology, and end-to-end process assurance |
 | Navigation, Layout, and Logistics Support | 11/75 | Mixed-traffic exposure, handover, communication stress, recovery, and site governance |
-
----
-
-## 💡 Foundational Robotics RL Techniques
-
-| **Technique** | **Use in construction robotics** |
-|:--|:--|
-| Deep reinforcement learning | Learning continuous control, planning, routing, placement, and manipulation policies from interaction |
-| Imitation learning and demonstrations | Initializing policies from expert operators, VR demonstrations, or teleoperation traces |
-| Safe RL and constrained RL | Encoding limits, intervention logic, constraint penalties, or safety filters for execution-time behavior |
-| Sim-to-real transfer | Moving policies from simulators to hardware through domain randomization, model learning, tactile transfer, or calibration |
-| Offline and data-driven RL | Learning from logged machine operation, operator traces, or project data where online exploration is costly |
-| Hybrid control and residual learning | Combining learned modules with MPC, impedance control, passivity terms, trajectory tracking, or rule-based supervisors |
-
----
-
-## 📋 Construction Robotics Testbeds and Data Sources
-
-| **Source type** | **Examples in the current field** | **Why it matters** |
-|:--|:--|:--|
-| Physics simulation | MuJoCo, PyBullet, Isaac Gym, RaiSim, Webots, Unity, Simulink | Enables repeated training and disturbance sampling before hardware exposure |
-| Digital twins and project simulators | BIM-linked crane planning, earthmoving dispatch simulation, tunnel boring machine process models | Connects learning policies to site-scale operations and project constraints |
-| Hardware prototypes | UR5/xArm assembly setups, tactile grippers, scaled hydraulic arms, wheel-loader and excavator platforms | Tests whether learned behavior survives sensing, actuation, and contact realities |
-| Field and machine logs | Bucket-filling cycles, hydraulic signals, wheel-loader operation traces, TBM time series | Supports offline learning, model identification, and deployment-relevant validation |
-
----
-
-## 🛠️ Popular Open-Source Libraries for Robot Learning
-
-| **Library** | **Basic function** | **Use case** |
-|:--|:--|:--|
-| [Stable-Baselines3](https://github.com/DLR-RM/stable-baselines3) | PyTorch implementations of PPO, SAC, TD3, DQN, and related algorithms | Baseline DRL training for control and planning tasks |
-| [RLlib](https://github.com/ray-project/ray/tree/master/rllib) | Scalable reinforcement learning library | Distributed training and multi-agent construction logistics experiments |
-| [Gymnasium](https://github.com/Farama-Foundation/Gymnasium) | Standard RL environment interface | Custom construction-robotics task environments |
-| [MuJoCo](https://github.com/google-deepmind/mujoco) | Physics engine for robot simulation | Manipulation, contact-rich installation, and locomotion-style control |
-| [PyBullet](https://github.com/bulletphysics/bullet3) | Physics simulation and robotics API | Rapid prototyping of robot control and planning tasks |
-| [ROS 2](https://github.com/ros2/ros2) | Robotics middleware | Connecting learned policies to sensors, controllers, and real robots |
-| [Isaac Lab](https://github.com/isaac-sim/IsaacLab) | GPU-accelerated robot learning environments | Large-scale simulation and sim-to-real research |
-
----
-
-## 🖥️ Hardware and Deployment Notes
-
-| **Stage** | **Typical setup** | **Main constraint** |
-|:--|:--|:--|
-| Simulation training | Desktop GPU or workstation GPU | Sample throughput, simulator fidelity, and domain randomization coverage |
-| Prototype validation | Lab robot, scaled construction mechanism, or instrumented end-effector | Sensing reliability, controller integration, contact physics, and reset protocol |
-| Full-scale machine testing | Excavator, loader, crane, material handler, or mobile construction robot | Safety envelope, site governance, human supervision, intervention logging, and operating permissions |
-| Workflow integration | Repeated exposure in real or near-operational construction workflows | Long-duration reliability, disturbance diversity, handover, recovery, maintenance, and accountability |
 
 ## License
 This repository is released under the [MIT LICENSE](LICENSE).
