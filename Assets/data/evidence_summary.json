@@ -1,0 +1,277 @@
+{
+  "title": "Deep Reinforcement Learning for Construction Robotics: A System-Level Taxonomy and Evidence Map toward Real-World Readiness",
+  "total_instances": 152,
+  "primary_instances": 75,
+  "contextual_instances": 77,
+  "counts": {
+    "A1_competency_regime": {
+      "Earthwork and Material Processing": 50,
+      "Structural Assembly and Installation": 35,
+      "Material Placement and Lifting": 33,
+      "Navigation, Layout, and Logistics Support": 27,
+      "Additive Manufacturing and Surface Processing": 7
+    },
+    "A2_action_abstraction": {
+      "Mid-level": 76,
+      "Low-level": 33,
+      "High-level": 23,
+      "High-level discrete assembly planning with macro-actions executed by inverse kinematics (move-to-pose and open/close gripper primitives)": 1,
+      "High-level multi-agent dispatching decisions over material type supply yard and route allocation for each truck cycle": 1,
+      "High-level multi-hoist dispatch and floor-serving decisions (discrete go-up go-down stop actions per decision step)": 1,
+      "Low-level / joint-velocity reference": 1,
+      "Low-level 1D linear velocity commands per robot toward assigned goals": 1,
+      "Low-level chunked end-effector delta-pose plus binary vacuum command": 1,
+      "Low-level continuous TBM parameter control (total thrust force TF and screw conveyor pressure SCP)": 1,
+      "Low-level continuous UR5e joint-angle and gripper control for phase-based pick-transport-place execution": 1,
+      "Low-level continuous actuator control (jib angular increment u_a_t and aero-pendulum thrust force F_t)": 1,
+      "Low-level continuous actuator-force control (trolley driving force u1 and lifting force u2 under saturation constraints)": 1,
+      "Low-level continuous joint position targets (boom and bucket trajectory setpoints)": 1,
+      "Low-level continuous joint-space control (per-step boom-arm-bucket joint-angle increments)": 1,
+      "Low-level continuous joint/actuator command control (slew joystick command plus boom/stick velocity references)": 1,
+      "Low-level continuous thrust-force decision along planned TBM excavation path (derived from hierarchical policy-belief-joint decision layers)": 1,
+      "Low-level discrete next-edge selection along the Eulerian graph (Q-learning at branching points)": 1,
+      "Low-level joint-space command generation for redundant hydraulic manipulator (policy outputs joint targets mapped to hydraulic valve commands)": 1,
+      "Mid-level articulated-loader path-tracking control via front-rear axle synchronized reference and steering-rate command": 1,
+      "Mid-level cable-robot manipulation policy over end-effector motion and cable-actuation coordination for autonomous navigation obstacle avoidance grasping and placement": 1,
+      "Mid-level crane motion command policy over tracks/boom/hook DoFs in simulator": 1,
+      "Mid-level reference-velocity planning with constrained MPC (front-body longitudinal velocity and center-joint angular velocity commands)": 1
+    },
+    "A3_SPAE_pattern": {
+      "MB/D/MB/MB": 139,
+      "H/D/H/H": 5,
+      "H/D/MB/MB": 3,
+      "MB/MB/MB/MB": 3,
+      "D/D/MB/MB": 2
+    },
+    "A3_authority_pattern": {
+      "Bounded skill or supervisory": 102,
+      "Task/planner-level": 30,
+      "Residual learning within classical control": 15,
+      "Bounded shared control": 2,
+      "Non-RL model-based control contextual": 1,
+      "Non-RL neural/passivity-based control contextual": 1,
+      "Non-RL robotization/data-generation platform": 1
+    },
+    "A4_assurance_mode": {
+      "AM0": 97,
+      "AM1": 36,
+      "AM2": 16,
+      "AM3": 3
+    },
+    "A5_EVL": {
+      "L0": 90,
+      "L2": 37,
+      "L3": 20,
+      "L1": 4,
+      "L4": 1
+    },
+    "synthesis_set": {
+      "Contextual": 77,
+      "Primary": 75
+    },
+    "final_tier": {
+      "Tier B": 87,
+      "Tier A": 65
+    }
+  },
+  "featured_records": [
+    {
+      "citation_key": "Zhang2022",
+      "year": "2022",
+      "title": "Online RL passivity-based stabilizing crane",
+      "A1_competency_regime": "Material Placement and Lifting",
+      "A3_SPAE_pattern": "MB/D/MB/MB",
+      "A4_assurance_mode": "AM2",
+      "A5_EVL": "L0",
+      "synthesis_set": "Primary",
+      "_alias_note": "PB-ODPG online actor-critic with TD critic target network and deterministic actor update; passivity-based stability indicator activates extra stabilizing gradient on actor weights when generalized energy derivative suggests instability; probing noise on control for exploration; MATLAB simulation versus LQR and passivity baseline; no physical deployment or separate runtime veto"
+    },
+    {
+      "citation_key": "eaglin2023controlling",
+      "year": "2023",
+      "title": "Controlling Double-Pendulum Crane",
+      "A1_competency_regime": "Material Placement and Lifting",
+      "A3_SPAE_pattern": "MB/D/MB/MB",
+      "A4_assurance_mode": "AM1",
+      "A5_EVL": "L1",
+      "synthesis_set": "Primary",
+      "_alias_note": "TD3 trained in simulation for trolley rest-to-rest with swing-penalized reward; RL-only versus fixed PD on trolley states plus RL residual acceleration (RL-PD) and PD plus agent-assigned swing coupling gains plus extra scalar RL action (RL-PD-A); sensitivity sweeps domain randomization and actuator saturations; physical small-scale crane with encoders and vision for hook and payload angles; hardware trials show RL-only sim-to-real failure while PD-plus-RL structures retain performance"
+    },
+    {
+      "citation_key": "balazy2024robust",
+      "year": "2024",
+      "title": "Robust RL Overhead Crane Variable Load",
+      "A1_competency_regime": "Material Placement and Lifting",
+      "A3_SPAE_pattern": "MB/D/MB/MB",
+      "A4_assurance_mode": "AM0",
+      "A5_EVL": "L0",
+      "synthesis_set": "Contextual",
+      "_alias_note": "Simulink overhead crane with simplified nonlinear discrete dynamics; penalty reward on positioning error sway angle and acceleration limits; robustness via varying load mass and sling length with per-episode randomization of object features; abstract and methodology stress TD3 while training section uses MATLAB Reinforcement Learning Toolbox rlDDPG DDPG-class MLP actor-critic (8-dim state observation 4-dim continuous action); long GPU-backed training compares 1 kg and 5 kg cases to time-varying LQR gains; validation is simulation-only with physical crane left to future work"
+    },
+    {
+      "citation_key": "muafi2025vision",
+      "year": "2025",
+      "title": "Vision-based Control Excavator Navigation",
+      "A1_competency_regime": "Navigation, Layout, and Logistics Support",
+      "A3_SPAE_pattern": "MB/D/MB/MB",
+      "A4_assurance_mode": "AM0",
+      "A5_EVL": "L0",
+      "synthesis_set": "Primary",
+      "_alias_note": "Wheeled excavator in Webots with onboard camera and YOLOv8 detector front-end; PPO Stable-Baselines3 MlpPolicy maps four bbox scalars to two continuous normalized wheel angular velocities for differential-drive undercarriage; inverse-sigmoid image-plane centroid-to-goal reward plus goal proximity distance and arena boundary terms are reward shaping without disclosed command-level shields; compares v8n v8s v8m selects v8m; fixed and randomized in-sim target placement tests; physical excavator deployment not reported"
+    },
+    {
+      "citation_key": "an2025path",
+      "year": "2025",
+      "title": "Path-Planning Cooperative Two-Crane Lift",
+      "A1_competency_regime": "Material Placement and Lifting",
+      "A3_SPAE_pattern": "MB/D/MB/MB",
+      "A4_assurance_mode": "AM2",
+      "A5_EVL": "L0",
+      "synthesis_set": "Contextual",
+      "_alias_note": "Cooperative dual truck-crane lift path planning via offline tabular Q-learning QLCLD; static equilibrium model gives load distribution MA MB versus crane postures for reward on balanced load ratios; feasible action set masks successors violating rope skew limits and ISO 9928-2 eighty percent per-crane load ratio before epsilon-greedy selection; discrete cooperative moves change at most one DOF per crane per step; MATLAB R2020a simulations with geometric collision checks compare QLCLD to load-agnostic QL and greedy GCLD; stated offline planner before real lift no hardware validation"
+    },
+    {
+      "citation_key": "apolinarska2021robotic",
+      "year": "2021",
+      "title": "Robotic assembly of timber joints",
+      "A1_competency_regime": "Structural Assembly and Installation",
+      "A3_SPAE_pattern": "MB/D/MB/MB",
+      "A4_assurance_mode": "AM2",
+      "A5_EVL": "L3",
+      "synthesis_set": "Primary",
+      "_alias_note": "Timber lap-joint insertion with industrial ABB IRB4600 and BOTA F/T sensor; Ape-X DDPG in RLlib trained entirely in PyBullet with human demonstration rollouts in shared replay and Gaussian domain randomization on F/T; policy outputs Cartesian linear and angular velocities at capped rates via ROS and EGM at fifty hertz; real episodes abort when sensor or wrist torque limits exceeded; distance-to-goal reward with success threshold; single-lap and double-lap physical tests and geometry tolerance sweeps sim versus real"
+    },
+    {
+      "citation_key": "babu2021terrain",
+      "year": "2021",
+      "title": "Terrain adaption walking excavator",
+      "A1_competency_regime": "Navigation, Layout, and Logistics Support",
+      "A3_SPAE_pattern": "MB/D/MB/MB",
+      "A4_assurance_mode": "AM2",
+      "A5_EVL": "L0",
+      "synthesis_set": "Primary",
+      "_alias_note": "ARTER walking excavator active suspension in PyBullet with ROS motion-control stack trajectory follower and pure pursuit at fixed speed; terrain from OpenSimplex height fields; SAC Stable-Baselines3 MLP with gSDE outputs normalized stabilizer rates filtered by active suspension first-order command shaping before joints at ten hertz control versus two hundred forty hertz sim; dense reward on NESM clearance wheel contact command magnitude roll pitch groups TC BC BTC compare latent terrain coding; training and evaluation simulation-only with real transfer stated as future work tip-over triggers negative terminal reward and env reset"
+    },
+    {
+      "citation_key": "babu2025stepping",
+      "year": "2025",
+      "title": "Stepping Locomotion Walking Excavator",
+      "A1_competency_regime": "Navigation, Layout, and Logistics Support",
+      "A3_SPAE_pattern": "MB/D/MB/MB",
+      "A4_assurance_mode": "AM2",
+      "A5_EVL": "L0",
+      "synthesis_set": "Primary",
+      "_alias_note": "ARTER walking-excavator stepping in PyBullet Stable-Baselines3; three-level manually designed HRL with programmatic Stepper Controller gating Step-In versus Step-Out; lowest layer outputs primitive commands to auxiliary manipulator Cartesian drive trajectory follower and joint velocity loops; Contact Switch and Step-In and Step-Out trained with Masked-PPO on discretized actions or goals using invalid action masking for joint limit saturation predefined subtask order and valid Contact-Switch goal sets; Move Base Manipulator uses continuous SAC; separate policies for obstacle step and gap templates; training and evaluation simulation-only with sim-to-real contact and dynamics gap acknowledged as future work"
+    },
+    {
+      "citation_key": "belousov2022robotic",
+      "year": "2022",
+      "title": "Robotic architectural assembly tactile skills",
+      "A1_competency_regime": "Structural Assembly and Installation",
+      "A3_SPAE_pattern": "MB/D/MB/MB",
+      "A4_assurance_mode": "AM1",
+      "A5_EVL": "L3",
+      "synthesis_set": "Primary",
+      "_alias_note": "Discrete SL modular blocks single placement focus; Rhino Grasshopper TCP bridge exports geometry to PyBullet; TD3 Stable-Baselines3 trains contact-rich stacking in sim nominal eight millimeter class accuracy random goals and grasps; simulated DIGIT gel deformation deemed inadequate so tactile skill shifted to real data model-based learning from handful of guided demos augmented to thirty thousand steps at fifteen hertz autoencoder plus latent dynamics with cross-entropy MPC; thirty physical join trials nineteen successes near one millimeter failures from jamming and multi-contact without penalty; concludes tactile sim limitations and points to graph or camera policies for multi-block scenes"
+    },
+    {
+      "citation_key": "cai2023prediction",
+      "year": "2023",
+      "title": "Prediction-based path planning HRC construction",
+      "A1_competency_regime": "Navigation, Layout, and Logistics Support",
+      "A3_SPAE_pattern": "MB/D/MB/MB",
+      "A4_assurance_mode": "AM0",
+      "A5_EVL": "L0",
+      "synthesis_set": "Primary",
+      "_alias_note": "Construction site discretized to half-meter grid mobile robot path planning as MDP; encoder-decoder LSTM predicts worker location distributions from labeled video trajectories then samples future grids into state; DQN with two twenty-four-node FC layers and target network epsilon-greedy over five actions including stay; reward mixes progress aimless penalty destination bonus discounted multi-step collision penalties with missing-worker-destination overlap cases excluded from collision stats and large boundary penalty; fifty thousand training episodes on homography-based sim from real footage one to five workers randomized starts compared to DQN without predicted cells; ten thousand test episodes report full success and near-shortest paths and lower collision rates versus baseline; onsite robot execution noted as future work"
+    },
+    {
+      "citation_key": "chen2025safe",
+      "year": "2025",
+      "title": "Safe RL tracking control hydraulic excavators",
+      "A1_competency_regime": "Earthwork and Material Processing",
+      "A3_SPAE_pattern": "MB/D/MB/MB",
+      "A4_assurance_mode": "AM3",
+      "A5_EVL": "L3",
+      "synthesis_set": "Primary",
+      "_alias_note": "Optimized backstepping with per-step HJB-style costs; Gaussian RBF actor-critic stacks (forty neurons each stage) learn unknown terms in optimal virtual controls and final valve command; log-type barrier Lyapunov functions enforce |zi| below prescribed kzi during online weight updates yielding SGUUB with states in safety tubes; unknown aggregate gain a4 handled via scaled stage-four cost and Lyapunov redesign; continuous proportional-valve input u; MATLAB single-cylinder tracking sim versus OB without BLF plus Ka perturbation robustness; Simscape Multibody SolidWorks task-space leveling demo; hydraulic testbed ROS C++ USB-CAN boom-and-arm leveling with disclosed tip reference; open repository RL-based-OBC-of-UHE"
+    },
+    {
+      "citation_key": "cho2022reinforcement",
+      "year": "2022",
+      "title": "RL tower crane 3D lift planning",
+      "A1_competency_regime": "Material Placement and Lifting",
+      "A3_SPAE_pattern": "MB/D/MB/MB",
+      "A4_assurance_mode": "AM0",
+      "A5_EVL": "L2",
+      "synthesis_set": "Primary",
+      "_alias_note": "Real-scale virtual site with HK290H-12 kinematic actuator parameters and simultaneous three-DOF motion; continuous policy outputs normalized trolley slew and hoist drive parameters feeding declared actuator dynamics; six training strategies pairing PPO on-policy and SAC off-policy with stacked continuous and discrete reward terms CR1 through CR5 and DR1 DR2 for proximity jib alignment post-load clearance and rotation penalties plus goal and collision events; strategy-number-three PPO preferred on multi-metric z-scores coordination ratio and failure rates with expert panel consensus; transferable tests on random versus unfamiliar layouts; case study replays sixty-two lifts in as-built BIM against field video timings reporting Pearson correlation about 0.6857; manual rigging omitted fixed mast position no onboard policy execution on physical crane"
+    },
+    {
+      "citation_key": "duan2025safety",
+      "year": "2025",
+      "title": "Safety-constrained DRL HRC construction",
+      "A1_competency_regime": "Navigation, Layout, and Logistics Support",
+      "A3_SPAE_pattern": "MB/D/MB/MB",
+      "A4_assurance_mode": "AM3",
+      "A5_EVL": "L2",
+      "synthesis_set": "Primary",
+      "_alias_note": "paper-level check: reviewed in prior evidence pass; classification retained after consistency audit."
+    },
+    {
+      "citation_key": "duan2025training",
+      "year": "2025",
+      "title": "Training of construction robots imitation",
+      "A1_competency_regime": "Structural Assembly and Installation",
+      "A3_SPAE_pattern": "MB/D/MB/MB",
+      "A4_assurance_mode": "AM0",
+      "A5_EVL": "L3",
+      "synthesis_set": "Primary",
+      "_alias_note": "Unity VR with Oculus Quest two and vision-based hand pose plus three-class SVM grip gestures driving a six-DOF xArm via IK to collect successful demos; BC warmup then PPO-style clipped policy gradient with value and entropy losses combining sparse piecewise environmental rewards for suction pickup window place and glass-drop termination plus GAIL-style discriminator intrinsic log-signal as weak occupancy supervisor; hyperparameter sweep favors strong extrinsic and small intrinsic weight with sixty demonstrations; simulation reports ninety-seven percent pick and install over hundred rollouts for best group; physical window panel suction task with low-level joint tracking and IK refinement inside distance thresholds; limitations fixed gesture vocabulary assumes accurate arm and camera stack"
+    },
+    {
+      "citation_key": "duan2025visual",
+      "year": "2025",
+      "title": "Visual tactile learning cable-in-duct",
+      "A1_competency_regime": "Structural Assembly and Installation",
+      "A3_SPAE_pattern": "MB/D/MB/MB",
+      "A4_assurance_mode": "AM0",
+      "A5_EVL": "L3",
+      "synthesis_set": "Primary",
+      "_alias_note": "MuJoCo UR5 with mocap welded end-effector GelSight fingers and Taxim-style simulated tactile images; multi-stage reward shaping via assist point above conduit mouth then insertion alignment; seven-dimensional bounded delta EE pose actions; SAC Stable-Baselines3; parallel FSTR-Net trains feature-level UDA Siamese ResNet-50 with stylization uncertainty DINO spectral foreground fusion for sim-to-real scalar angle regression; reports about ninety-nine percent tactile-test accuracy and about ninety-eight percent sim success with in-hand ablation; physical Robotiq 2F-85 GelSight RealSense cable-in-duct trials across pipe sizes and precise versus rough grasp commands with about ninety-five point eight percent average success in abstract and Table three style breakdowns; repeated push phases at puller mouth for long feeds; gel curvature and tight switch-box clearance noted as limits"
+    },
+    {
+      "citation_key": "egli2022_soil",
+      "year": "2022",
+      "title": "Soil-adaptive excavation RL",
+      "A1_competency_regime": "Earthwork and Material Processing",
+      "A3_SPAE_pattern": "MB/D/MB/MB",
+      "A4_assurance_mode": "AM1",
+      "A5_EVL": "L3",
+      "synthesis_set": "Primary",
+      "_alias_note": "RaiSim rigid-body excavator with floating base and PID inner loops mimicking velocity tracking torque clipping and hydraulic directional asymmetry; FEE-based separation plus penetration soil forces with wide randomized geotechnical ranges; custom parallel PPO-GAE MLP policy outputs normalized four-joint velocity setpoints mapped to standard proportional main-stage valves via pilot retrofit and feedforward-PID valve current loops on twelve-ton Menzi Muck; dense and terminal rewards with curriculum on terminal pose thresholds and multiple negative terminations bucket speed base slip empty-bucket air gap self-collision penetration geometry phi constraint; hardware soft soil medium granite-interrupted hard trench; sim2real without online soil ID"
+    },
+    {
+      "citation_key": "egli2022general",
+      "year": "2022",
+      "title": "General approach hydraulic excavator arms",
+      "A1_competency_regime": "Earthwork and Material Processing",
+      "A3_SPAE_pattern": "MB/D/MB/MB",
+      "A4_assurance_mode": "AM1",
+      "A5_EVL": "L3",
+      "synthesis_set": "Primary",
+      "_alias_note": "Supervised FF actuator network from about 100 min at 100 Hz ramp-chirp pilot commands predicts next-step joint velocities embedding hydraulic delays deadband cylinder-to-joint effects with only link lengths for FK; PPO2-GAE tanh MLP policy trained in learned-model sim at 6.7 Hz with observation noise and hidden ±10 percent action gain randomization outputs pilot currents deployed at 100 Hz without filtering; outer deployment uses proportional pose-error plus feedforward trajectory velocity per Eq 2 then learned valve tracking; air circular straight-line benchmarks versus Leica iCON and grading with soil contact not seen in RL training"
+    },
+    {
+      "citation_key": "egli2024reinforcement",
+      "year": "2024",
+      "title": "RL bucket filling autonomous excavation",
+      "A1_competency_regime": "Earthwork and Material Processing",
+      "A3_SPAE_pattern": "MB/D/MB/MB",
+      "A4_assurance_mode": "AM1",
+      "A5_EVL": "L3",
+      "synthesis_set": "Primary",
+      "_alias_note": "Isaac Gym floating-base excavator with parallel batched rollouts and configuration-dependent cylinder-to-joint torque limits analytic FEE-style separation-plus-penetration soil forces RBF-randomized terrain slopes and depth envelopes heavy domain randomization curriculum on terminals and terrain scale PPO-GAE separate MLP policy-value outputs normalized four-joint velocity setpoints tracked in sim by inverse-dynamics inner loop and on twelve-ton HEAP Menzi Muck by PID plus feedforward pilot valve flow at 100 Hz extensive single-scoop soils and trench mission nested in Terenzi-Hutter style global-local excavation planner with geometric PoA human benchmark and map-based fill discrepancy discussion"
+    }
+  ]
+}
