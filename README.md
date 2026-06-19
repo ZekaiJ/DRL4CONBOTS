@@ -24,6 +24,7 @@
 - [News and Updates](#news-and-updates)
 - [Corpus and Screening](#corpus-and-screening)
 - [Framework and Taxonomy](#framework-and-taxonomy)
+- [Evidence Diagnostic](#evidence-diagnostic)
 - [Representative Papers by Category](#representative-papers-by-category)
   - [Earthwork and Material Processing](#earthwork-and-material-processing)
   - [Structural Assembly and Installation](#structural-assembly-and-installation)
@@ -71,10 +72,14 @@ The review uses five coupled dimensions:
 </p>
 <h5 align=center>Methodological translation logic: reported task outcomes are interpreted as bounded deployment-relevant claim scope through the five-axis framework.</h5>
 
+
+## Evidence Diagnostic
+A cross-axis view of runtime-assurance disclosure and validation exposure across competency regimes.
+
 <p align="center">
-<img src="Assets/cross_axis_evidence_trend.png" width="820"/>
+<img src="Assets/cross_axis_evidence_trend.png" width="760"/>
 </p>
-<h5 align=center>Companion evidence diagnostic: runtime assurance (A4) against validation exposure (A5), with validation-exposure composition by competency regime.</h5>
+<h5 align=center>Runtime assurance (A4) against validation exposure (A5), with validation-exposure composition by competency regime.</h5>
 
 ## Representative Papers by Category
 Selected papers are grouped by the five competency regimes used in the DRL4CONBOTS framework.
