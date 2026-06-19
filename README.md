@@ -3,70 +3,67 @@
 <div align="center">
 <a href="https://github.com/David-Kingsman/DRL4CONBOTS/stargazers"><img src="https://img.shields.io/github/stars/David-Kingsman/DRL4CONBOTS" alt="Stars Badge"/></a>
 <a href="#"><img src="https://img.shields.io/badge/Status-pre--submission-6b6f76" alt="Pre-submission status"/></a>
-<a href="#"><img src="https://img.shields.io/badge/Papers-152_coded_instances-315d6a" alt="152 coded instances"/></a>
+<a href="#"><img src="https://img.shields.io/badge/Evidence-152_coded_instances-315d6a" alt="152 coded instances"/></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-e6b23f" alt="MIT License"/></a>
 </div>
 
 <p align="center">
-<img src="Assets/Fig3.png" width="700"/>
+<img src="Assets/figures/Fig1.png" width="780"/>
 </p>
-<h5 align=center>The DRL4CONBOTS framework for interpreting claim scope in DRL-enabled construction robotics.</h5>
+<h5 align=center>Graphical overview of the DRL4CONBOTS evidence framework for deployment-relevant DRL in construction robotics.</h5>
 
-> A curated collection of papers, evidence trends, and resources related to **Deep Reinforcement Learning for Construction Robotics (DRL4CONBOTS)**.
+> A curated companion repository for **Deep Reinforcement Learning for Construction Robotics (DRL4CONBOTS)**.
 >
-> This repository serves as the online companion to our pre-submission survey **"Deep Reinforcement Learning for Construction Robotics: A System-Level Taxonomy and Evidence Map toward Real-World Readiness"**.
+> This repository accompanies the pre-submission survey **"Deep Reinforcement Learning for Construction Robotics: A System-Level Taxonomy and Evidence Map toward Real-World Readiness"**.
 >
-> 📢 The rapid growth of DRL-enabled construction robotics is creating a shift from isolated task demonstrations toward system-level questions about authority, runtime assurance, validation exposure, and real-world readiness. This repository tracks high-quality papers and evidence patterns in this field, serving as a lightweight hub for researchers, practitioners, and students. Stay tuned!
+> DRL-enabled construction robotics is moving from isolated task demonstrations toward system-level questions about authority, runtime assurance, validation exposure, and deployment-relevant evidence. This repository tracks representative papers, taxonomy figures, and evidence patterns for researchers, practitioners, and students working at the intersection of construction automation, robot learning, and field robotics.
 >
-> Feel free to contact us if you have any suggestions or would like to discuss with us by e-mail: zekai.jin@mail.mcgill.ca
+> Contact: zekai.jin@mail.mcgill.ca
 
 ## Table of Contents
-- [🔥 News & Updates](#-news--updates)
-- [📝 Cite Our Work](#-cite-our-work)
-- [📖 Framework and Taxonomy](#-framework-and-taxonomy)
-- [📚 Papers by Category](#-papers-by-category)
+- [News and Updates](#news-and-updates)
+- [Framework and Taxonomy](#framework-and-taxonomy)
+- [Representative Papers by Category](#representative-papers-by-category)
   - [Earthwork and Material Processing](#earthwork-and-material-processing)
   - [Structural Assembly and Installation](#structural-assembly-and-installation)
   - [Material Placement and Lifting](#material-placement-and-lifting)
   - [Additive Manufacturing and Surface Processing](#additive-manufacturing-and-surface-processing)
   - [Navigation, Layout, and Logistics Support](#navigation-layout-and-logistics-support)
-- [📈 Research Trend](#-research-trend)
-- [⭐ Overview of Primary Evidence Regimes](#-overview-of-primary-evidence-regimes)
+- [Evidence Trends](#evidence-trends)
+- [Primary Evidence Regimes](#primary-evidence-regimes)
+- [Citation](#citation)
 - [License](#license)
 
-## 🔥 News & Updates
-- ✅ **[June 2026] Repository launch:** `DRL4CONBOTS` is prepared as the public companion page for the pre-submission survey.
-- ✅ **[June 2026] Evidence map released:** The current repository tracks **152 coded construction-robotics instances**, including **75 primary DRL instances**.
-- ✅ **[June 2026] Core finding:** Across the **75** primary DRL instances, **35** are simultaneously **AM0** and **EVL L0**, while **0** reach sustained workflow-integrated deployment.
+## News and Updates
+- **[June 2026] Repository launch:** `DRL4CONBOTS` is prepared as the public companion repository for the pre-submission survey.
+- **[June 2026] Evidence map released:** The current repository tracks **152 coded construction-robotics instances**, including **75 primary DRL instances**.
+- **[June 2026] Core finding:** Across the **75** primary DRL instances, **35** are simultaneously **AM0** and **EVL L0**, while **0** reach sustained workflow-integrated deployment.
 
-## 📝 Cite Our Work
-This manuscript has not yet been submitted and has no journal DOI. If you find this repository useful, please cite the pre-submission companion repository and the original papers behind row-level technical claims.
-
-```bibtex
-@misc{jin2026drl4conbots,
-  title        = {DRL4CONBOTS: Deep Reinforcement Learning for Construction Robotics Evidence Map},
-  author       = {Jin, Zekai and Wang, Huiguang and Tang, Yihong and Guo, Zhanyu and Sun, Lijun and Dong, Zhen and Feng, Chen and Shao, Yi},
-  year         = {2026},
-  howpublished = {Pre-submission manuscript companion repository},
-  note         = {Repository and manuscript metadata to be updated after submission or archival release}
-}
-```
-
-## 📖 Framework and Taxonomy
-*Definition*: **DRL4CONBOTS** refers to a system-level evidence map for deep reinforcement learning in construction robotics. Instead of ranking algorithms by task success alone, it interprets what each reported robot system can credibly claim based on its task regime, learning formulation, runtime authority, runtime assurance, and validation exposure.
+## Framework and Taxonomy
+**DRL4CONBOTS** is a system-level evidence map for deep reinforcement learning in construction robotics. Instead of ranking algorithms by task success alone, it interprets what each reported robotic system can credibly claim based on its task regime, learning formulation, runtime authority, runtime assurance, and validation exposure.
 
 The review uses five coupled dimensions:
 
-- **A1. Competency regime**: earthwork, assembly, lifting, additive/surface processing, or navigation/logistics.
-- **A2. Learning formulation**: observation, action abstraction, decision formalism, and training pathway.
-- **A3. Runtime authority**: who senses, proposes, arbitrates, and executes robot behavior.
-- **A4. Runtime assurance**: whether execution-time safeguards, constraints, monitors, or fallback layers are disclosed.
-- **A5. Validation exposure**: where behavior is tested, from simulation-only evidence to sustained field deployment.
+- **A1. Competency regime:** earthwork, assembly, lifting, additive/surface processing, or navigation/logistics.
+- **A2. Learning formulation:** observation interface, action abstraction, decision formalism, objective specification, and training pathway.
+- **A3. Runtime authority:** who senses, proposes, arbitrates, and executes robot behavior.
+- **A4. Runtime assurance:** whether execution-time safeguards, constraints, monitors, or fallback layers are disclosed.
+- **A5. Validation exposure:** where behavior is tested, from simulation-only evaluation to sustained field deployment.
 
----
+### Methodology Figures
 
-## 📚 Papers by Category
-Here, we list representative high-quality papers according to the five competency regimes used in the DRL4CONBOTS framework.
+<p align="center">
+<img src="Assets/figures/Fig3.png" width="760"/>
+</p>
+<h5 align=center>Methodological translation logic: reported task outcomes are interpreted as bounded deployment-relevant claim scope through the five-axis framework.</h5>
+
+<p align="center">
+<img src="Assets/cross_axis_evidence_trend.png" width="820"/>
+</p>
+<h5 align=center>Companion evidence diagnostic: runtime assurance (A4) against validation exposure (A5), with validation-exposure composition by competency regime.</h5>
+
+## Representative Papers by Category
+Selected papers are grouped by the five competency regimes used in the DRL4CONBOTS framework.
 
 #### **Earthwork and Material Processing**
 *Function: Learn excavation, grading, loading, material handling, and machine-level interaction where soil, rock, traction, tool load, and material-state evolution dominate claim scope.*
@@ -135,13 +132,11 @@ Here, we list representative high-quality papers according to the five competenc
     - **[Prediction-based path planning for safe and efficient human-robot collaboration in construction via deep reinforcement learning](https://doi.org/10.1061/(ASCE)CP.1943-5487.0001056)**. *Cai, J. et al.* **[Journal of Computing in Civil Engineering 2023]**.
         - *Highlight: Combines worker-location prediction with DQN path planning for construction HRC scenarios.*
 
----
-
-## 📈 Research Trend
+## Evidence Trends
 The current evidence base shows that real-world readiness cannot be inferred from algorithm labels, hardware presence, or field-like demonstrations alone.
 
 <p align="center">
-<img src="Assets/Fig11.png" width="720"/>
+<img src="Assets/figures/Fig12.png" width="760"/>
 </p>
 <h5 align=center>Evidence-closure map for deployment-relevant claims in construction robotics.</h5>
 
@@ -151,14 +146,7 @@ Key findings from the primary synthesis set:
 - **Simulation without safeguards:** **35/75** primary instances are simultaneously AM0 and EVL L0.
 - **Exposure-assurance divergence:** **20/75** primary instances reach EVL L3 or higher, but only **1** reaches EVL L4 and **0** reach EVL L5.
 
-<p align="center">
-<img src="Assets/cross_axis_evidence_trend.png" width="820"/>
-</p>
-<h5 align=center>Cross-axis primary evidence trend: runtime assurance against validation exposure.</h5>
-
----
-
-## ⭐ Overview of Primary Evidence Regimes
+## Primary Evidence Regimes
 
 | **Regime** | **Primary instances** | **Main bottleneck** |
 |:--|:--:|:--|
@@ -168,5 +156,18 @@ Key findings from the primary synthesis set:
 | Additive Manufacturing and Surface Processing | 2/75 | Scale-dependent process physics, material rheology, and end-to-end process assurance |
 | Navigation, Layout, and Logistics Support | 11/75 | Mixed-traffic exposure, handover, communication stress, recovery, and site governance |
 
+## Citation
+The manuscript is currently in pre-submission status. Citation metadata will be updated after preprint, submission, or journal publication.
+
+```bibtex
+@misc{jin2026drl4conbots,
+  title        = {DRL4CONBOTS: Deep Reinforcement Learning for Construction Robotics Evidence Map},
+  author       = {Jin, Zekai and Wang, Huiguang and Tang, Yihong and Guo, Zhanyu and Sun, Lijun and Dong, Zhen and Feng, Chen and Shao, Yi},
+  year         = {2026},
+  howpublished = {Pre-submission manuscript companion repository},
+  note         = {Repository and manuscript metadata to be updated after submission or archival release}
+}
+```
+
 ## License
-This repository is released under the [MIT LICENSE](LICENSE).
+This repository is released under the [MIT License](LICENSE).
