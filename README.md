@@ -22,6 +22,7 @@
 
 ## Table of Contents
 - [News and Updates](#news-and-updates)
+- [Corpus and Screening](#corpus-and-screening)
 - [Framework and Taxonomy](#framework-and-taxonomy)
 - [Representative Papers by Category](#representative-papers-by-category)
   - [Earthwork and Material Processing](#earthwork-and-material-processing)
@@ -39,6 +40,14 @@
 - **[June 2026] Evidence map released:** The current repository tracks **152 coded construction-robotics instances**, including **75 primary DRL instances**.
 - **[June 2026] Core finding:** Across the **75** primary DRL instances, **35** are simultaneously **AM0** and **EVL L0**, while **0** reach sustained workflow-integrated deployment.
 
+## Corpus and Screening
+The review uses a report-level PRISMA screening process before coding system-instance evidence for taxonomy and readiness analysis.
+
+<p align="center">
+<img src="Assets/figures/Fig2.png" width="620"/>
+</p>
+<h5 align=center>PRISMA flow from database search to the final coded evidence base.</h5>
+
 ## Framework and Taxonomy
 **DRL4CONBOTS** is a system-level evidence map for deep reinforcement learning in construction robotics. Instead of ranking algorithms by task success alone, it interprets what each reported robotic system can credibly claim based on its task regime, learning formulation, runtime authority, runtime assurance, and validation exposure.
 
@@ -49,6 +58,11 @@ The review uses five coupled dimensions:
 - **A3. Runtime authority:** who senses, proposes, arbitrates, and executes robot behavior.
 - **A4. Runtime assurance:** whether execution-time safeguards, constraints, monitors, or fallback layers are disclosed.
 - **A5. Validation exposure:** where behavior is tested, from simulation-only evaluation to sustained field deployment.
+
+<p align="center">
+<img src="Assets/figures/Fig6.png" width="760"/>
+</p>
+<h5 align=center>Five construction-robotics competency regimes used to organize task-specific evidence and deployment bottlenecks.</h5>
 
 ### Methodology Figures
 
