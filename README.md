@@ -2,7 +2,7 @@
   <img src="Assets/logo.png" width="140" alt="DRL4CONBOTS logo"/>
 </p>
 
-<h1 align="center">DRL4CONBOTS: Deep Reinforcement Learning for Construction Robotics</h1>
+<h1 align="center">Deep Reinforcement Learning for Construction Robotics: A System-Level Taxonomy and Evidence Map toward Real-World Readiness</h1>
 
 <p align="center">
 <strong>Zekai Jin<sup>1</sup>, Huiguang Wang<sup>1</sup>, Yihong Tang<sup>1</sup>, Zhen Dong<sup>2,3</sup>, Chen Feng<sup>4</sup>, and Yi Shao<sup>1,5,*</sup></strong><br>
@@ -194,7 +194,7 @@ The manuscript is currently under review in Automation in Construction. Citation
 
 ```bibtex
 @misc{jin2026drl4conbots,
-  title        = {DRL4CONBOTS: Deep Reinforcement Learning for Construction Robotics Evidence Map},
+  title        = {Deep Reinforcement Learning for Construction Robotics: A System-Level Taxonomy and Evidence Map toward Real-World Readiness},
   author       = {Jin, Zekai and Wang, Huiguang and Tang, Yihong and Dong, Zhen and Feng, Chen and Shao, Yi},
   year         = {2026},
   howpublished = {Companion repository for a manuscript under review in Automation in Construction},
