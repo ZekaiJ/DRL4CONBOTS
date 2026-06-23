@@ -24,7 +24,7 @@
 
 > A curated companion repository for **Deep Reinforcement Learning for Construction Robotics (DRL4CONBOTS)**.
 >
-> This repository accompanies the manuscript under review **"Deep Reinforcement Learning for Construction Robotics: A System-Level Taxonomy and Evidence Map toward Real-World Readiness"**.
+> This repository accompanies the manuscript under review in **Automation in Construction**, **"Deep Reinforcement Learning for Construction Robotics: A System-Level Taxonomy and Evidence Map toward Real-World Readiness"**.
 >
 > DRL-enabled construction robotics is moving from isolated task demonstrations toward system-level questions about authority, runtime assurance, validation exposure, and deployment-relevant evidence. This repository tracks representative papers, taxonomy figures, and evidence patterns for researchers, practitioners, and students working at the intersection of construction automation, robot learning, and field robotics.
 >
@@ -47,7 +47,7 @@
 - [License & contact](#license--contact)
 
 ## News and Updates
-- **[June 2026] Repository launch:** `DRL4CONBOTS` is prepared as the public companion repository for the manuscript under review.
+- **[June 2026] Repository launch:** `DRL4CONBOTS` is prepared as the public companion repository for the manuscript under review in Automation in Construction.
 - **[June 2026] Evidence map released:** The current repository tracks **152 coded construction-robotics instances**, including **75 primary DRL instances**.
 - **[June 2026] Core finding:** Across the **75** primary DRL instances, **35** are simultaneously **AM0** and **EVL L0**, while **0** reach sustained workflow-integrated deployment.
 
@@ -186,14 +186,14 @@ Key findings from the primary synthesis set:
 | Navigation, Layout, and Logistics Support | 11/75 | Mixed-traffic exposure, handover, communication stress, recovery, and site governance |
 
 ## Citation
-The manuscript is currently under review. Citation metadata will be updated after preprint, acceptance, or journal publication.
+The manuscript is currently under review in Automation in Construction. Citation metadata will be updated after preprint, acceptance, or journal publication.
 
 ```bibtex
 @misc{jin2026drl4conbots,
   title        = {DRL4CONBOTS: Deep Reinforcement Learning for Construction Robotics Evidence Map},
   author       = {Jin, Zekai and Wang, Huiguang and Tang, Yihong and Dong, Zhen and Feng, Chen and Shao, Yi},
   year         = {2026},
-  howpublished = {Companion repository for a manuscript under review},
+  howpublished = {Companion repository for a manuscript under review in Automation in Construction},
   url          = {https://github.com/ZekaiJ/DRL4CONBOTS}
 }
 ```
