@@ -44,7 +44,7 @@
 - [Evidence Trends](#evidence-trends)
 - [Primary Evidence Regimes](#primary-evidence-regimes)
 - [Citation](#citation)
-- [License](#license)
+- [License & contact](#license--contact)
 
 ## News and Updates
 - **[June 2026] Repository launch:** `DRL4CONBOTS` is prepared as the public companion repository for the pre-submission survey.
@@ -198,5 +198,5 @@ The manuscript is currently in pre-submission status. Citation metadata will be 
 }
 ```
 
-## License
-This repository is released under the [MIT License](LICENSE).
+## License & contact
+Released under the [MIT](LICENSE) license. Questions, feedback, or collaboration: zekai.jin@mail.mcgill.ca
