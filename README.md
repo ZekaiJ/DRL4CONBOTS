@@ -1,4 +1,14 @@
-# DRL4CONBOTS: Deep Reinforcement Learning for Construction Robotics
+<h1 align="center">DRL4CONBOTS: Deep Reinforcement Learning for Construction Robotics</h1>
+
+<p align="center">
+<strong>Zekai Jin<sup>1</sup>, Huiguang Wang<sup>1</sup>, Yihong Tang<sup>1</sup>, Zhen Dong<sup>2,3</sup>, Chen Feng<sup>4</sup>, and Yi Shao<sup>1,5,*</sup></strong><br>
+<sup>1</sup>Department of Civil Engineering, McGill University, Montreal, QC, Canada<br>
+<sup>2</sup>Department of Computer Science, University of California, Santa Barbara, Santa Barbara, CA, USA<br>
+<sup>3</sup>NVIDIA Corporation, Santa Clara, CA, USA<br>
+<sup>4</sup>Department of Mechanical and Aerospace Engineering, Tandon School of Engineering, New York University, NY, USA<br>
+<sup>5</sup>Department of Civil Engineering, University of British Columbia, Vancouver, Canada<br>
+<sup>*</sup>Corresponding author: <a href="mailto:yi.shao@ubc.ca">yi.shao@ubc.ca</a>
+</p>
 
 <div align="center">
 <a href="https://github.com/ZekaiJ/DRL4CONBOTS/stargazers"><img src="https://img.shields.io/github/stars/ZekaiJ/DRL4CONBOTS?label=stars&amp;cacheSeconds=60" alt="Stars Badge"/></a>
@@ -181,7 +191,7 @@ The manuscript is currently in pre-submission status. Citation metadata will be 
 ```bibtex
 @misc{jin2026drl4conbots,
   title        = {DRL4CONBOTS: Deep Reinforcement Learning for Construction Robotics Evidence Map},
-  author       = {Jin, Zekai and Wang, Huiguang and Tang, Yihong and Guo, Zhanyu and Sun, Lijun and Dong, Zhen and Feng, Chen and Shao, Yi},
+  author       = {Jin, Zekai and Wang, Huiguang and Tang, Yihong and Dong, Zhen and Feng, Chen and Shao, Yi},
   year         = {2026},
   howpublished = {Pre-submission manuscript companion repository},
   note         = {Repository and manuscript metadata to be updated after submission or archival release}
