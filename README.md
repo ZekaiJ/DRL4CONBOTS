@@ -1,7 +1,7 @@
 # DRL4CONBOTS: Deep Reinforcement Learning for Construction Robotics
 
 <div align="center">
-<a href="https://github.com/ZekaiJ/DRL4CONBOTS/stargazers"><img src="https://img.shields.io/github/stars/ZekaiJ/DRL4CONBOTS" alt="Stars Badge"/></a>
+<a href="https://github.com/ZekaiJ/DRL4CONBOTS/stargazers"><img src="https://img.shields.io/github/stars/ZekaiJ/DRL4CONBOTS?label=stars&amp;cacheSeconds=60" alt="Stars Badge"/></a>
 <a href="#"><img src="https://img.shields.io/badge/Status-pre--submission-6b6f76" alt="Pre-submission status"/></a>
 <a href="#"><img src="https://img.shields.io/badge/Evidence-152_coded_instances-315d6a" alt="152 coded instances"/></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-e6b23f" alt="MIT License"/></a>
