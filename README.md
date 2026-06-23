@@ -12,7 +12,7 @@
 
 <div align="center">
 <a href="https://github.com/ZekaiJ/DRL4CONBOTS/stargazers"><img src="https://img.shields.io/github/stars/ZekaiJ/DRL4CONBOTS?label=stars&amp;cacheSeconds=60" alt="Stars Badge"/></a>
-<a href="#"><img src="https://img.shields.io/badge/Status-pre--submission-6b6f76" alt="Pre-submission status"/></a>
+<a href="#"><img src="https://img.shields.io/badge/Status-under--review-6b6f76" alt="Under review status"/></a>
 <a href="#"><img src="https://img.shields.io/badge/Evidence-152_coded_instances-315d6a" alt="152 coded instances"/></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-e6b23f" alt="MIT License"/></a>
 </div>
@@ -24,7 +24,7 @@
 
 > A curated companion repository for **Deep Reinforcement Learning for Construction Robotics (DRL4CONBOTS)**.
 >
-> This repository accompanies the pre-submission survey **"Deep Reinforcement Learning for Construction Robotics: A System-Level Taxonomy and Evidence Map toward Real-World Readiness"**.
+> This repository accompanies the manuscript under review **"Deep Reinforcement Learning for Construction Robotics: A System-Level Taxonomy and Evidence Map toward Real-World Readiness"**.
 >
 > DRL-enabled construction robotics is moving from isolated task demonstrations toward system-level questions about authority, runtime assurance, validation exposure, and deployment-relevant evidence. This repository tracks representative papers, taxonomy figures, and evidence patterns for researchers, practitioners, and students working at the intersection of construction automation, robot learning, and field robotics.
 >
@@ -47,7 +47,7 @@
 - [License & contact](#license--contact)
 
 ## News and Updates
-- **[June 2026] Repository launch:** `DRL4CONBOTS` is prepared as the public companion repository for the pre-submission survey.
+- **[June 2026] Repository launch:** `DRL4CONBOTS` is prepared as the public companion repository for the manuscript under review.
 - **[June 2026] Evidence map released:** The current repository tracks **152 coded construction-robotics instances**, including **75 primary DRL instances**.
 - **[June 2026] Core finding:** Across the **75** primary DRL instances, **35** are simultaneously **AM0** and **EVL L0**, while **0** reach sustained workflow-integrated deployment.
 
@@ -186,15 +186,15 @@ Key findings from the primary synthesis set:
 | Navigation, Layout, and Logistics Support | 11/75 | Mixed-traffic exposure, handover, communication stress, recovery, and site governance |
 
 ## Citation
-The manuscript is currently in pre-submission status. Citation metadata will be updated after preprint, submission, or journal publication.
+The manuscript is currently under review. Citation metadata will be updated after preprint, acceptance, or journal publication.
 
 ```bibtex
 @misc{jin2026drl4conbots,
   title        = {DRL4CONBOTS: Deep Reinforcement Learning for Construction Robotics Evidence Map},
   author       = {Jin, Zekai and Wang, Huiguang and Tang, Yihong and Dong, Zhen and Feng, Chen and Shao, Yi},
   year         = {2026},
-  howpublished = {Pre-submission manuscript companion repository},
-  note         = {Repository and manuscript metadata to be updated after submission or archival release}
+  howpublished = {Companion repository for a manuscript under review},
+  url          = {https://github.com/ZekaiJ/DRL4CONBOTS}
 }
 ```
 
