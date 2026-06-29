@@ -594,11 +594,17 @@ h2 {
   align-items: start;
 }
 
+.citation-section > *,
+.citation-box {
+  min-width: 0;
+}
+
 .citation-box {
   padding: 18px;
 }
 
 pre {
+  max-width: 100%;
   overflow: auto;
   margin: 0 0 14px;
   padding: 18px;
