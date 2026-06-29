@@ -29,6 +29,10 @@
 <strong>DRL4CONBOTS Evidence Atlas</strong><br>
 <a href="https://raw.githack.com/ZekaiJ/DRL4CONBOTS/main/docs/index.html">Preview interactive atlas</a> | <a href="docs/index.html">Browse static page source</a> | <a href="#citation">Copy citation metadata</a>
 </p>
+<p align="center">
+<sub><strong>Author affiliations:</strong> McGill University | UC Santa Barbara | NVIDIA | New York University | University of British Columbia</sub><br>
+<sub>Institution names indicate author affiliations only, not institutional endorsement.</sub>
+</p>
 
 > A curated companion repository for **Deep Reinforcement Learning for Construction Robotics (DRL4CONBOTS)**.
 >
