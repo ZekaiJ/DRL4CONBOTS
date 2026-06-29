@@ -278,16 +278,20 @@ h2 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 48px;
-  padding: 10px 12px;
+  min-height: 68px;
+  padding: 12px 14px;
   border: 1px solid rgba(225, 238, 255, 0.14);
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.045);
-  color: var(--text);
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 1.25;
-  text-align: center;
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.affiliation-list img {
+  display: block;
+  max-width: 100%;
+  max-height: 36px;
+  object-fit: contain;
+  filter: grayscale(1) saturate(0.15) contrast(1.08);
+  opacity: 0.84;
 }
 
 .affiliation-note {
