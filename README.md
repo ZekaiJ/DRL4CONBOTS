@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Assets/logo.png" width="195" alt="DRL4CONBOTS logo"/>
+  <img src="Assets/logo.png" width="240" alt="DRL4CONBOTS logo"/>
 </p>
 
 <h1 align="center">Deep Reinforcement Learning for Construction Robotics</h1>
