@@ -27,7 +27,7 @@
 
 <p align="center">
 <strong>DRL4CONBOTS Evidence Atlas</strong><br>
-<a href="https://zekaij.github.io/DRL4CONBOTS/">Open interactive atlas</a> | <a href="docs/index.html">Browse static page source</a> | <a href="#citation">Copy citation metadata</a>
+<a href="https://raw.githack.com/ZekaiJ/DRL4CONBOTS/main/docs/index.html">Preview interactive atlas</a> | <a href="docs/index.html">Browse static page source</a> | <a href="#citation">Copy citation metadata</a>
 </p>
 
 > A curated companion repository for **Deep Reinforcement Learning for Construction Robotics (DRL4CONBOTS)**.
@@ -53,7 +53,7 @@
 The repository includes a GitHub Pages-ready interactive atlas in [`docs/index.html`](docs/index.html). The atlas provides a high-level entry point for readers who want to scan the framework, inspect readiness diagnostics, filter representative papers, and browse core figures before reading the manuscript.
 
 <p align="center">
-<a href="https://zekaij.github.io/DRL4CONBOTS/"><strong>Open the interactive atlas</strong></a>
+<a href="https://raw.githack.com/ZekaiJ/DRL4CONBOTS/main/docs/index.html"><strong>Preview the interactive atlas</strong></a>
 </p>
 
 <p align="center">
@@ -61,22 +61,10 @@ The repository includes a GitHub Pages-ready interactive atlas in [`docs/index.h
 </p>
 <p align="center"><sub>Graphical overview of the DRL4CONBOTS evidence framework for deployment-relevant DRL in construction robotics.</sub></p>
 
-## Core figure gallery
-
-| Overview | Screening |
-|:--:|:--:|
-| <img src="Assets/figures/Fig1.png" width="360" alt="Graphical overview"/> | <img src="Assets/figures/Fig2.png" width="360" alt="PRISMA flow"/> |
-| Evidence framework | PRISMA screening flow |
-
-| Taxonomy | Evidence closure |
-|:--:|:--:|
-| <img src="Assets/figures/Fig6.png" width="360" alt="Five competency regimes"/> | <img src="Assets/figures/Fig12.png" width="360" alt="Evidence closure map"/> |
-| Five competency regimes | Deployment-relevant claim scope |
 
 ## Table of Contents
 - [At a glance](#at-a-glance)
 - [Interactive Evidence Atlas](#interactive-evidence-atlas)
-- [Core figure gallery](#core-figure-gallery)
 - [News and Updates](#news-and-updates)
 - [Corpus and Screening](#corpus-and-screening)
 - [Framework and Taxonomy](#framework-and-taxonomy)
