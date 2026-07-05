@@ -36,6 +36,14 @@
 >
 > DRL-enabled construction robotics is moving from isolated task demonstrations toward system-level questions about authority, runtime assurance, validation exposure, and deployment-relevant evidence. This repository tracks representative papers, taxonomy figures, and evidence patterns for researchers, practitioners, and students working at the intersection of construction automation, robot learning, and field robotics.
 >
+> **Affiliations:**  
+> 1 Department of Civil Engineering, McGill University, Canada  
+> 2 Department of Computer Science, University of California, Santa Barbara, United States  
+> 3 NVIDIA Corporation, United States  
+> 4 Department of Mechanical and Aerospace Engineering, Tandon School of Engineering, New York University, United States  
+> 5 Department of Civil Engineering, University of British Columbia, Canada  
+> \*Corresponding author: yi.shao@ubc.ca
+>
 > Contact: zekai.jin@mail.mcgill.ca
 
 ## At a glance
