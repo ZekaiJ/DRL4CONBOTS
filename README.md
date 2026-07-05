@@ -7,11 +7,11 @@
 
 <p align="center">
 <strong>Zekai Jin<sup>1</sup>, Huiguang Wang<sup>1</sup>, Yihong Tang<sup>1</sup>, Zhen Dong<sup>2,3</sup>, Chen Feng<sup>4</sup>, and Yi Shao<sup>1,5,*</sup></strong><br>
-<sup>1</sup>Department of Civil Engineering, McGill University, Montreal, QC, Canada<br>
-<sup>2</sup>Department of Computer Science, University of California, Santa Barbara, Santa Barbara, CA, USA<br>
-<sup>3</sup>NVIDIA Corporation, Santa Clara, CA, USA<br>
-<sup>4</sup>Department of Mechanical and Aerospace Engineering, Tandon School of Engineering, New York University, NY, USA<br>
-<sup>5</sup>Department of Civil Engineering, University of British Columbia, Vancouver, Canada<br>
+<sup>1</sup>Department of Civil Engineering, McGill University, Canada<br>
+<sup>2</sup>Department of Computer Science, University of California, Santa Barbara, United States<br>
+<sup>3</sup>NVIDIA Corporation, United States<br>
+<sup>4</sup>Department of Mechanical and Aerospace Engineering, Tandon School of Engineering, New York University, United States<br>
+<sup>5</sup>Department of Civil Engineering, University of British Columbia, Canada<br>
 <sup>*</sup>Corresponding author: <a href="mailto:yi.shao@ubc.ca">yi.shao@ubc.ca</a>
 </p>
 
@@ -35,14 +35,6 @@
 > This repository accompanies the manuscript under review in **Automation in Construction**, **"Deep Reinforcement Learning for Construction Robotics: A System-Level Taxonomy and Evidence Map toward Real-World Readiness"**.
 >
 > DRL-enabled construction robotics is moving from isolated task demonstrations toward system-level questions about authority, runtime assurance, validation exposure, and deployment-relevant evidence. This repository tracks representative papers, taxonomy figures, and evidence patterns for researchers, practitioners, and students working at the intersection of construction automation, robot learning, and field robotics.
->
-> **Affiliations:**  
-> 1 Department of Civil Engineering, McGill University, Canada  
-> 2 Department of Computer Science, University of California, Santa Barbara, United States  
-> 3 NVIDIA Corporation, United States  
-> 4 Department of Mechanical and Aerospace Engineering, Tandon School of Engineering, New York University, United States  
-> 5 Department of Civil Engineering, University of British Columbia, Canada  
-> \*Corresponding author: yi.shao@ubc.ca
 >
 > Contact: zekai.jin@mail.mcgill.ca
 
