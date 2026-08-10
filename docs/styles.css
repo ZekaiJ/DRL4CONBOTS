@@ -455,19 +455,19 @@ h2 {
   line-height: 1.65;
 }
 
-.matrix-layout {
+.contrast-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.82fr);
   gap: 18px;
 }
 
-.matrix-board {
+.contrast-board {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
 }
 
-.matrix-cell {
+.contrast-cell {
   min-height: 170px;
   padding: 20px;
   border: 1px solid var(--line);
@@ -478,13 +478,13 @@ h2 {
   cursor: pointer;
 }
 
-.matrix-cell span,
-.matrix-cell small {
+.contrast-cell span,
+.contrast-cell small {
   display: block;
   color: var(--muted);
 }
 
-.matrix-cell strong {
+.contrast-cell strong {
   display: block;
   margin: 16px 0 10px;
   color: var(--cyan);
@@ -492,7 +492,7 @@ h2 {
   line-height: 0.9;
 }
 
-.matrix-cell.active {
+.contrast-cell.active {
   border-color: rgba(72, 199, 243, 0.7);
   background: linear-gradient(180deg, rgba(72, 199, 243, 0.16), rgba(72, 199, 243, 0.045));
 }
@@ -643,7 +643,7 @@ pre {
 
   .hero,
   .split,
-  .matrix-layout,
+  .contrast-layout,
   .citation-section {
     grid-template-columns: 1fr;
   }
@@ -666,7 +666,7 @@ pre {
   .snapshot-grid,
   .paper-grid,
   .figure-grid,
-  .matrix-board,
+  .contrast-board,
   .metric-grid.compact {
     grid-template-columns: 1fr;
   }
