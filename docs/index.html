@@ -1,216 +1,121 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DRL4CONBOTS Evidence Atlas</title>
-    <meta name="description" content="Interactive companion atlas for a manuscript on deep reinforcement learning in construction robotics.">
-    <link rel="stylesheet" href="styles.css?v=20260629-full-audit-fix">
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="DRL4CONBOTS Evidence Atlas home">
-        <img src="https://raw.githubusercontent.com/ZekaiJ/DRL4CONBOTS/main/Assets/logo.png" alt="DRL4CONBOTS logo">
-        <span>
-          <strong>DRL4CONBOTS</strong>
-          <small>Evidence Atlas</small>
-        </span>
-      </a>
-      <nav aria-label="Primary navigation">
-        <a href="#snapshot">Snapshot</a>
-        <a href="#taxonomy">Taxonomy</a>
-        <a href="#matrix">Matrix</a>
-        <a href="#papers">Papers</a>
-        <a href="#figures">Figures</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Current systematic-review evidence map for deep reinforcement learning in construction robotics." />
+  <title>DRL4CONBOTS | Systematic Review Evidence Map</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <img src="../Assets/logo.png" alt="DRL4CONBOTS" />
+      <span><strong>DRL4CONBOTS</strong><small>Systematic review release | 10 Aug 2026</small></span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#corpus">Corpus</a><a href="#framework">Framework</a><a href="#findings">Findings</a><a href="#papers">Studies</a><a href="#policy">Policies</a>
+    </nav>
+  </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Automation in Construction manuscript companion</p>
-          <h1>Evidence atlas for deep reinforcement learning in construction robotics.</h1>
-          <p class="lede">
-            A system-level view of task regimes, learning formulations, runtime authority,
-            runtime assurance, and validation exposure across construction-robotics DRL studies.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#matrix">Explore readiness matrix</a>
-            <a class="button secondary" href="https://github.com/ZekaiJ/DRL4CONBOTS">Repository</a>
-          </div>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Automation in Construction | systematic review</p>
+        <h1>Deep Reinforcement Learning for Construction Robotics</h1>
+        <p class="lede">A system-level taxonomy and evidence map toward real-world readiness, synchronized with the search cutoff of 9 August 2026.</p>
+        <div class="hero-actions"><a class="button primary" href="#corpus">View current counts</a><a class="button secondary" href="../README.md">Read repository notes</a></div>
+      </div>
+      <aside class="hero-card" aria-label="Release metrics">
+        <img class="hero-logo" src="../Assets/logo.png" alt="DRL4CONBOTS logo" />
+        <div class="metric-grid compact">
+          <div><strong>140</strong><span>formal reports</span></div>
+          <div><strong>75</strong><span>comparative subset</span></div>
+          <div><strong>65</strong><span>additional eligible</span></div>
+          <div><strong>26</strong><span>contextual sources</span></div>
         </div>
-        <aside class="hero-card" aria-label="Evidence snapshot">
-          <img class="hero-logo" src="https://raw.githubusercontent.com/ZekaiJ/DRL4CONBOTS/main/Assets/logo.png" alt="DRL4CONBOTS mark">
-          <div class="metric-grid compact">
-            <div><strong>152</strong><span>coded instances</span></div>
-            <div><strong>75</strong><span>primary DRL</span></div>
-            <div><strong>35/75</strong><span>AM0 + EVL L0</span></div>
-            <div><strong>0</strong><span>sustained deployments</span></div>
-          </div>
-        </aside>
-      </section>
+      </aside>
+    </section>
 
-      <section class="affiliation-band" aria-label="Author affiliations">
-        <div class="affiliation-copy">
-          <span>Author Affiliations</span>
-          <strong>Institutional marks identify author affiliations.</strong>
-        </div>
-        <div class="affiliation-list" aria-label="Institutional affiliation logos">
-          <span><img class="affiliation-logo" src="https://raw.githubusercontent.com/ZekaiJ/DRL4CONBOTS/main/Assets/affiliations/mcgill.png" alt="McGill University logo" style="display:block;max-width:100%;max-height:36px;width:auto;height:auto;object-fit:contain;filter:grayscale(1) saturate(0.15) contrast(1.08);opacity:0.84;"></span>
-          <span><img class="affiliation-logo" src="https://raw.githubusercontent.com/ZekaiJ/DRL4CONBOTS/main/Assets/affiliations/ucsb.png" alt="UC Santa Barbara logo" style="display:block;max-width:100%;max-height:36px;width:auto;height:auto;object-fit:contain;filter:grayscale(1) saturate(0.15) contrast(1.08);opacity:0.84;"></span>
-          <span><img class="affiliation-logo" src="https://raw.githubusercontent.com/ZekaiJ/DRL4CONBOTS/main/Assets/affiliations/nvidia.png" alt="NVIDIA logo" style="display:block;max-width:100%;max-height:36px;width:auto;height:auto;object-fit:contain;filter:grayscale(1) saturate(0.15) contrast(1.08);opacity:0.84;"></span>
-          <span><img class="affiliation-logo" src="https://raw.githubusercontent.com/ZekaiJ/DRL4CONBOTS/main/Assets/affiliations/nyu.png" alt="New York University logo" style="display:block;max-width:100%;max-height:36px;width:auto;height:auto;object-fit:contain;filter:grayscale(1) saturate(0.15) contrast(1.08);opacity:0.84;"></span>
-          <span><img class="affiliation-logo" src="https://raw.githubusercontent.com/ZekaiJ/DRL4CONBOTS/main/Assets/affiliations/ubc.png" alt="University of British Columbia logo" style="display:block;max-width:100%;max-height:36px;width:auto;height:auto;object-fit:contain;filter:grayscale(1) saturate(0.15) contrast(1.08);opacity:0.84;"></span>
-        </div>
-        <p class="affiliation-note">Shown for author affiliation identification only.</p>
-      </section>
-      <section id="snapshot" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">At a glance</p>
-          <h2>What the companion repository makes visible.</h2>
-        </div>
-        <div class="snapshot-grid">
-          <article>
-            <span>Manuscript</span>
-            <strong>Under review in Automation in Construction</strong>
-          </article>
-          <article>
-            <span>Evidence base</span>
-            <strong>152 coded construction-robotics instances</strong>
-          </article>
-          <article>
-            <span>Primary DRL synthesis</span>
-            <strong>75 primary DRL instances across five competency regimes</strong>
-          </article>
-          <article>
-            <span>Diagnostic message</span>
-            <strong>Readiness depends on authority, assurance, and exposure, not algorithm labels alone</strong>
-          </article>
-        </div>
-      </section>
+    <section class="section" id="corpus">
+      <div class="section-heading"><p class="eyebrow">Evidence base</p><h2>One current count lineage</h2><p>The report is the unit of PRISMA inclusion. Contextual sources do not enter formal denominators.</p></div>
+      <div class="snapshot-grid">
+        <article><span>Identification</span><strong>6,409 records</strong><p>5,557 initial records plus an 852-record May--August update.</p></article>
+        <article><span>Screening</span><strong>4,051 unique</strong><p>After removal of 2,358 duplicate records.</p></article>
+        <article><span>Eligibility</span><strong>155 full texts</strong><p>140 reports met the formal inclusion criteria.</p></article>
+        <article><span>Synthesis</span><strong>166 sources</strong><p>140 formal reports plus 26 contextual sources.</p></article>
+      </div>
+    </section>
 
-      <section id="taxonomy" class="section split">
-        <div class="section-heading">
-          <p class="eyebrow">A1-A5 framework</p>
-          <h2>Five axes keep the review evidence-bound.</h2>
-          <p>
-            The atlas treats each reported system as a bounded claim. Switch axes to see what each dimension contributes to deployment-relevant interpretation.
-          </p>
-        </div>
+    <section class="section" id="framework">
+      <div class="section-heading narrow"><p class="eyebrow">Analytical framework</p><h2>Five regimes, five connected questions</h2><p>The evidence map interprets a learned component inside the complete robot--learning--control configuration. It does not assign an ordinal readiness score.</p></div>
+      <div class="split">
         <div class="taxonomy-panel">
-          <div class="axis-tabs" role="tablist" aria-label="Taxonomy axes">
-            <button class="axis-tab active" type="button" data-axis="a1">A1</button>
-            <button class="axis-tab" type="button" data-axis="a2">A2</button>
-            <button class="axis-tab" type="button" data-axis="a3">A3</button>
-            <button class="axis-tab" type="button" data-axis="a4">A4</button>
-            <button class="axis-tab" type="button" data-axis="a5">A5</button>
+          <div class="axis-tabs" role="tablist">
+            <button class="axis-tab active" data-axis="failure">Failure regime</button>
+            <button class="axis-tab" data-axis="learning">Learning formulation</button>
+            <button class="axis-tab" data-axis="authority">Command responsibility</button>
+            <button class="axis-tab" data-axis="safeguards">Runtime safeguards</button>
+            <button class="axis-tab" data-axis="validation">Validation conditions</button>
           </div>
-          <article class="axis-card" id="axis-card" aria-live="polite"></article>
+          <div class="axis-card" id="axis-card" aria-live="polite"></div>
         </div>
-      </section>
+        <div class="insight-card">
+          <h3>Construction regimes</h3>
+          <ul>
+            <li>Earthwork and material processing</li>
+            <li>Structural assembly and installation</li>
+            <li>Material placement and lifting</li>
+            <li>Additive manufacturing and surface processing</li>
+            <li>Navigation, layout, and logistics support</li>
+          </ul>
+          <p>Each regime is organized by the failure physics that govern the task, not by an algorithm leaderboard.</p>
+        </div>
+      </div>
+    </section>
 
-      <section id="matrix" class="section">
-        <div class="section-heading narrow">
-          <p class="eyebrow">Readiness diagnostic</p>
-          <h2>Runtime assurance and validation exposure separate demonstration from deployment evidence.</h2>
+    <section class="section" id="findings">
+      <div class="section-heading"><p class="eyebrow">Cross-regime synthesis</p><h2>Three findings</h2><p>Select a finding to see its interpretation and evidence boundary.</p></div>
+      <div class="contrast-layout">
+        <div class="contrast-board">
+          <button class="contrast-cell active" data-contrast="physics"><span>Finding</span><strong>1</strong><small>Failure physics shapes technical relevance</small></button>
+          <button class="contrast-cell" data-contrast="system"><span>Finding</span><strong>2</strong><small>Performance belongs to the complete configuration</small></button>
+          <button class="contrast-cell" data-contrast="validation"><span>Finding</span><strong>3</strong><small>Hardware realism is not safeguard completeness</small></button>
         </div>
-        <div class="matrix-layout">
-          <div class="matrix-board" aria-label="Readiness matrix insights">
-            <button class="matrix-cell active" type="button" data-insight="am0-l0">
-              <span>AM0 + EVL L0</span>
-              <strong>35</strong>
-              <small>primary instances</small>
-            </button>
-            <button class="matrix-cell" type="button" data-insight="evl3">
-              <span>EVL L3+</span>
-              <strong>20</strong>
-              <small>reach physical or field-like exposure</small>
-            </button>
-            <button class="matrix-cell" type="button" data-insight="evl4">
-              <span>EVL L4</span>
-              <strong>1</strong>
-              <small>near-operational anchor</small>
-            </button>
-            <button class="matrix-cell" type="button" data-insight="evl5">
-              <span>EVL L5</span>
-              <strong>0</strong>
-              <small>sustained workflow-integrated deployments</small>
-            </button>
-          </div>
-          <aside class="insight-card" id="insight-card" aria-live="polite"></aside>
-        </div>
-      </section>
+        <div class="insight-card" id="contrast-card" aria-live="polite"></div>
+      </div>
+    </section>
 
-      <section id="papers" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Representative papers</p>
-          <h2>Filter examples by construction-robotics regime.</h2>
-        </div>
-        <div class="filters" aria-label="Paper filters">
-          <button class="filter active" type="button" data-filter="all">All</button>
-          <button class="filter" type="button" data-filter="earthwork">Earthwork</button>
-          <button class="filter" type="button" data-filter="assembly">Assembly</button>
-          <button class="filter" type="button" data-filter="lifting">Lifting</button>
-          <button class="filter" type="button" data-filter="additive">Additive</button>
-          <button class="filter" type="button" data-filter="navigation">Navigation</button>
-        </div>
-        <div class="paper-grid" id="paper-grid"></div>
-      </section>
+    <section class="section" id="papers">
+      <div class="section-heading"><p class="eyebrow">Representative studies</p><h2>Technical anchors by regime</h2><p>These examples support the comparative narrative; the full 166-source index is available in the evidence folder.</p></div>
+      <div class="filters">
+        <button class="filter active" data-filter="all">All</button><button class="filter" data-filter="earthwork">Earthwork</button><button class="filter" data-filter="assembly">Assembly</button><button class="filter" data-filter="lifting">Lifting</button><button class="filter" data-filter="process">Process</button><button class="filter" data-filter="navigation">Navigation</button>
+      </div>
+      <div class="paper-grid" id="paper-grid"></div>
+    </section>
 
-      <section id="figures" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Figure gallery</p>
-          <h2>Core visuals from the evidence map.</h2>
-        </div>
-        <div class="figure-grid">
-          <a class="figure-card" href="https://raw.githubusercontent.com/ZekaiJ/DRL4CONBOTS/main/Assets/figures/Fig1.png">
-            <img src="https://raw.githubusercontent.com/ZekaiJ/DRL4CONBOTS/main/Assets/figures/Fig1.png" alt="Graphical overview of the evidence framework">
-            <strong>Graphical overview</strong>
-            <span>Evidence framework for deployment-relevant DRL</span>
-          </a>
-          <a class="figure-card" href="https://raw.githubusercontent.com/ZekaiJ/DRL4CONBOTS/main/Assets/figures/Fig2.png">
-            <img src="https://raw.githubusercontent.com/ZekaiJ/DRL4CONBOTS/main/Assets/figures/Fig2.png" alt="PRISMA flow diagram">
-            <strong>Corpus and screening</strong>
-            <span>Report-level PRISMA flow</span>
-          </a>
-          <a class="figure-card" href="https://raw.githubusercontent.com/ZekaiJ/DRL4CONBOTS/main/Assets/figures/Fig6.png">
-            <img src="https://raw.githubusercontent.com/ZekaiJ/DRL4CONBOTS/main/Assets/figures/Fig6.png" alt="Five competency regimes">
-            <strong>Competency regimes</strong>
-            <span>Task-specific evidence organization</span>
-          </a>
-          <a class="figure-card" href="https://raw.githubusercontent.com/ZekaiJ/DRL4CONBOTS/main/Assets/figures/Fig12.png">
-            <img src="https://raw.githubusercontent.com/ZekaiJ/DRL4CONBOTS/main/Assets/figures/Fig12.png" alt="Evidence-closure map">
-            <strong>Evidence-closure map</strong>
-            <span>Deployment-relevant claim scope</span>
-          </a>
-        </div>
-      </section>
+    <section class="section" id="policy">
+      <div class="section-heading"><p class="eyebrow">Transparency</p><h2>Reviewer, preprint, and figure policies</h2></div>
+      <div class="snapshot-grid">
+        <article><span>Reviewer configuration</span><strong>Single-reviewer selection and extraction</strong><p>The first author screened, assessed full texts, and extracted data. No duplicate-review or agreement statistic is claimed.</p></article>
+        <article><span>Preprints</span><strong>4 formal + 1 contextual</strong><p>Only full technical manuscripts without an archival version at the cutoff were eligible.</p></article>
+        <article><span>Sensitivity check</span><strong>136 / 71</strong><p>Peer-reviewed-only formal corpus / comparative subset. No finding relies on a preprint alone.</p></article>
+        <article><span>Figure rights</span><strong>Author-drawn plates</strong><p>Current representative regime figures reproduce or adapt no third-party image.</p></article>
+      </div>
+    </section>
 
-      <section id="citation" class="section citation-section">
-        <div>
-          <p class="eyebrow">Citation</p>
-          <h2>Manuscript companion metadata.</h2>
-          <p>The citation will be updated after preprint, acceptance, or archival release.</p>
-        </div>
-        <div class="citation-box">
-          <pre id="bibtex">@misc{jin2026drl4conbots,
-  title        = {Deep Reinforcement Learning for Construction Robotics: A System-Level Taxonomy and Evidence Map toward Real-World Readiness},
-  author       = {Jin, Zekai and Wang, Huiguang and Tang, Yihong and Dong, Zhen and Feng, Chen and Shao, Yi},
-  year         = {2026},
-  howpublished = {Companion repository for a manuscript under review in Automation in Construction},
-  url          = {https://github.com/ZekaiJ/DRL4CONBOTS}
-}</pre>
-          <button class="button secondary" type="button" id="copy-bibtex">Copy BibTeX</button>
-        </div>
-      </section>
-    </main>
+    <section class="section citation-section" id="citation">
+      <div><p class="eyebrow">Citation</p><h2>Manuscript metadata</h2><p>The title is unchanged. Update publication metadata after acceptance.</p></div>
+      <div class="citation-box"><pre id="bibtex">@article{jin2026drlconstructionrobotics,
+  title   = {Deep Reinforcement Learning for Construction Robotics: A System-Level Taxonomy and Evidence Map toward Real-World Readiness},
+  author  = {Jin, Zekai and Wang, Huiguang and Tang, Yihong and Dong, Zhen and Feng, Chen and Shao, Yi},
+  journal = {Manuscript prepared for Automation in Construction},
+  year    = {2026}
+}</pre><button class="button secondary" id="copy-bibtex">Copy BibTeX</button></div>
+    </section>
+  </main>
 
-    <footer class="site-footer">
-      <span>DRL4CONBOTS Evidence Atlas</span>
-      <a href="https://github.com/ZekaiJ/DRL4CONBOTS">GitHub</a>
-      <a href="mailto:zekai.jin@mail.mcgill.ca">Contact</a>
-    </footer>
-
-    <script src="script.js"></script>
-  </body>
+  <footer class="site-footer"><span>Current release: 10 August 2026</span><a href="../evidence/CURRENT_RELEASE_2026-08-10.md">Release manifest</a><a href="../LEGACY_ASSETS_NOTICE.md">Legacy notice</a></footer>
+  <script src="script.js"></script>
+</body>
 </html>
