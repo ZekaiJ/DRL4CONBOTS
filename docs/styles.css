@@ -1,4 +1,3 @@
-
 :root {
   color-scheme: dark;
   --bg: #06090d;
@@ -456,19 +455,19 @@ h2 {
   line-height: 1.65;
 }
 
-.contrast-layout {
+.matrix-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.82fr);
   gap: 18px;
 }
 
-.contrast-board {
+.matrix-board {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
 }
 
-.contrast-cell {
+.matrix-cell {
   min-height: 170px;
   padding: 20px;
   border: 1px solid var(--line);
@@ -479,13 +478,13 @@ h2 {
   cursor: pointer;
 }
 
-.contrast-cell span,
-.contrast-cell small {
+.matrix-cell span,
+.matrix-cell small {
   display: block;
   color: var(--muted);
 }
 
-.contrast-cell strong {
+.matrix-cell strong {
   display: block;
   margin: 16px 0 10px;
   color: var(--cyan);
@@ -493,7 +492,7 @@ h2 {
   line-height: 0.9;
 }
 
-.contrast-cell.active {
+.matrix-cell.active {
   border-color: rgba(72, 199, 243, 0.7);
   background: linear-gradient(180deg, rgba(72, 199, 243, 0.16), rgba(72, 199, 243, 0.045));
 }
@@ -644,7 +643,7 @@ pre {
 
   .hero,
   .split,
-  .contrast-layout,
+  .matrix-layout,
   .citation-section {
     grid-template-columns: 1fr;
   }
@@ -667,7 +666,7 @@ pre {
   .snapshot-grid,
   .paper-grid,
   .figure-grid,
-  .contrast-board,
+  .matrix-board,
   .metric-grid.compact {
     grid-template-columns: 1fr;
   }

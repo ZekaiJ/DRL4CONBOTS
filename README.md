@@ -1,90 +1,261 @@
-<p align="center"><img src="Assets/logo.png" width="220" alt="DRL4CONBOTS logo"/></p>
+<p align="center">
+  <img src="Assets/logo.png" width="240" alt="DRL4CONBOTS logo"/>
+</p>
 
 <h1 align="center">Deep Reinforcement Learning for Construction Robotics</h1>
 <h3 align="center">A System-Level Taxonomy and Evidence Map toward Real-World Readiness</h3>
 
 <p align="center">
-<img src="https://img.shields.io/badge/review-systematic-1f6f8b" alt="Systematic review"/>
-<img src="https://img.shields.io/badge/search_frozen-9_August_2026-315d6a" alt="Search frozen 9 August 2026"/>
-<img src="https://img.shields.io/badge/formal_corpus-140_reports-2e7d5b" alt="140 formal reports"/>
-<img src="https://img.shields.io/badge/comparative_subset-75_reports-8b5a2b" alt="75 comparative reports"/>
-<img src="https://img.shields.io/badge/overall_evidence_base-166_sources-8a3d6e" alt="166 sources overall"/>
+<strong>Zekai Jin<sup>1</sup>, Huiguang Wang<sup>1</sup>, Yihong Tang<sup>1</sup>, Zhen Dong<sup>2,3</sup>, Chen Feng<sup>4</sup>, and Yi Shao<sup>1,5,*</sup></strong><br>
+<sup>1</sup>Department of Civil Engineering, McGill University, Canada<br>
+<sup>2</sup>Department of Computer Science, University of California, Santa Barbara, United States<br>
+<sup>3</sup>NVIDIA Corporation, United States<br>
+<sup>4</sup>Department of Mechanical and Aerospace Engineering, Tandon School of Engineering, New York University, United States<br>
+<sup>5</sup>Department of Civil Engineering, University of British Columbia, Canada<br>
+<sup>*</sup>Corresponding author: <a href="mailto:yi.shao@ubc.ca">yi.shao@ubc.ca</a>
 </p>
 
-This is the companion repository for the systematic review being prepared for resubmission to **Automation in Construction**:
+<div align="center">
+<a href="#"><img src="https://img.shields.io/badge/Journal-Automation_in_Construction-1f6f8b" alt="Automation in Construction"/></a>
+<a href="#"><img src="https://img.shields.io/badge/Status-under--review-6b6f76" alt="Under review status"/></a>
+<a href="#"><img src="https://img.shields.io/badge/Evidence-152_coded_instances-315d6a" alt="152 coded instances"/></a>
+<a href="#"><img src="https://img.shields.io/badge/Primary_DRL-75_instances-48c7f3" alt="75 primary DRL instances"/></a>
+<a href="#"><img src="https://img.shields.io/badge/Framework-A1--A5-f2a42d" alt="A1-A5 framework"/></a>
+<a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-e6b23f" alt="MIT License"/></a>
+<a href="https://github.com/ZekaiJ/DRL4CONBOTS/stargazers"><img src="https://img.shields.io/github/stars/ZekaiJ/DRL4CONBOTS?label=stars&amp;cacheSeconds=60" alt="Stars Badge"/></a>
+</div>
 
-> **Deep Reinforcement Learning for Construction Robotics: A System-Level Taxonomy and Evidence Map toward Real-World Readiness**
+<p align="center">
+<strong>DRL4CONBOTS Evidence Atlas</strong><br>
+<a href="https://raw.githack.com/ZekaiJ/DRL4CONBOTS/main/docs/index.html">Preview interactive atlas</a> | <a href="docs/index.html">Browse static page source</a> | <a href="#citation">Copy citation metadata</a>
+</p>
 
-The repository release is synchronized with the manuscript search cutoff of **9 August 2026**. It supersedes earlier public materials that used AM/EVL ratings, a 152-instance atlas, or an A1--A5 reconstruction. Those legacy outputs are not findings of the current manuscript and must not be used to interpret it.
+> A curated companion repository for **Deep Reinforcement Learning for Construction Robotics (DRL4CONBOTS)**.
+>
+> This repository accompanies the manuscript under review in **Automation in Construction**, **"Deep Reinforcement Learning for Construction Robotics: A System-Level Taxonomy and Evidence Map toward Real-World Readiness"**.
+>
+> DRL-enabled construction robotics is moving from isolated task demonstrations toward system-level questions about authority, runtime assurance, validation exposure, and deployment-relevant evidence. This repository tracks representative papers, taxonomy figures, and evidence patterns for researchers, practitioners, and students working at the intersection of construction automation, robot learning, and field robotics.
+>
+> Contact: zekai.jin@mail.mcgill.ca
 
-## Current evidence base
+## At a glance
 
-| Review layer | Count | Role |
-|---|---:|---|
-| Records identified | 6,409 | Scopus, Web of Science Core Collection, IEEE Xplore, and the initial targeted Google Scholar check |
-| Duplicate records removed | 2,358 | Exact DOI and normalized title--year matching |
-| Unique records screened | 4,051 | Title--abstract screening |
-| Full texts assessed | 155 | Eligibility assessment after two reports could not be retrieved |
-| Formal systematic-review corpus | 140 | Reports meeting the embodied-DRL and construction-robotics criteria |
-| Cross-dimensional comparative subset | 75 | Reports with sufficient information for structured technical comparison |
-| Additional eligible qualitative reports | 65 | Broader task, method, and validation synthesis |
-| Supplementary contextual sources | 26 | Adjacent mechanisms, standards, reviews, and emerging applications; excluded from formal denominators |
-| Overall evidence base | 166 | Formal reports plus contextual sources |
+| Item | Current release |
+|:--|:--|
+| Manuscript status | Under review in **Automation in Construction** |
+| Evidence base | **152** coded construction-robotics instances |
+| Primary DRL synthesis | **75** primary DRL instances across five competency regimes |
+| Framework | **A1-A5** competency, learning formulation, runtime authority, runtime assurance, and validation exposure |
+| Core diagnostic | **35/75** primary instances are AM0 + EVL L0, while **0** reach sustained workflow-integrated deployment |
 
-The numerical distributions in the manuscript describe the **75-report comparative subset**. They are not estimates of field-wide prevalence and are not readiness scores.
+## Interactive Evidence Atlas
 
-## Review process
+The repository includes a GitHub Pages-ready interactive atlas in [`docs/index.html`](docs/index.html). The atlas provides a high-level entry point for readers who want to scan the framework, inspect readiness diagnostics, filter representative papers, and browse core figures before reading the manuscript.
 
-The review combines systematic literature identification, predefined eligibility criteria, structured data extraction, and cross-dimensional comparative synthesis. Title--abstract screening, full-text eligibility assessment, and structured extraction for the original and update searches were conducted by the first author. The other authors contributed to review design, technical interpretation, and manuscript revision. Independent duplicate screening and duplicate extraction were not undertaken; no inter-rater agreement statistic is claimed.
+<p align="center">
+<a href="https://raw.githack.com/ZekaiJ/DRL4CONBOTS/main/docs/index.html"><strong>Preview the interactive atlas</strong></a>
+</p>
 
-The principal analytical dimensions are:
+<p align="center">
+<img src="Assets/figures/Fig1.png" width="780"/>
+</p>
+<p align="center"><sub>Graphical overview of the DRL4CONBOTS evidence framework for deployment-relevant DRL in construction robotics.</sub></p>
 
-1. construction-specific failure regime;
-2. learning formulation, including observation, action, objective, and training pathway;
-3. command responsibility and runtime authority;
-4. execution-time safeguards and recovery pathways; and
-5. validation conditions and the operating conclusion supported by the complete system.
 
-The five construction regimes are earthwork and material processing; structural assembly and installation; material placement and lifting; additive manufacturing and surface processing; and navigation, layout, and logistics support.
+## Table of Contents
+- [At a glance](#at-a-glance)
+- [Interactive Evidence Atlas](#interactive-evidence-atlas)
+- [News and Updates](#news-and-updates)
+- [Corpus and Screening](#corpus-and-screening)
+- [Framework and Taxonomy](#framework-and-taxonomy)
+- [Evidence Diagnostic](#evidence-diagnostic)
+- [Representative Papers by Category](#representative-papers-by-category)
+  - [Earthwork and Material Processing](#earthwork-and-material-processing)
+  - [Structural Assembly and Installation](#structural-assembly-and-installation)
+  - [Material Placement and Lifting](#material-placement-and-lifting)
+  - [Additive Manufacturing and Surface Processing](#additive-manufacturing-and-surface-processing)
+  - [Navigation, Layout, and Logistics Support](#navigation-layout-and-logistics-support)
+- [Evidence Trends](#evidence-trends)
+- [Primary Evidence Regimes](#primary-evidence-regimes)
+- [Citation](#citation)
+- [License & contact](#license--contact)
 
-## Preprint policy
+## News and Updates
+- **[June 2026] Repository launch:** `DRL4CONBOTS` is prepared as the public companion repository for the manuscript under review in Automation in Construction.
+- **[June 2026] Evidence map released:** The current repository tracks **152 coded construction-robotics instances**, including **75 primary DRL instances**.
+- **[June 2026] Core finding:** Across the **75** primary DRL instances, **35** are simultaneously **AM0** and **EVL L0**, while **0** reach sustained workflow-integrated deployment.
 
-Peer-reviewed journal and conference papers were preferred. A full research preprint could enter the formal corpus only when it reported original embodied-DRL evidence, no archival version was available at the search cutoff, and the full text allowed the same eligibility and comparison criteria to be applied. An archival version replaced a preprint whenever one was available.
+## Corpus and Screening
+The review uses a report-level PRISMA screening process before coding system-instance evidence for taxonomy and readiness analysis.
 
-Four research preprints met the formal criteria and entered the 75-report comparative subset. One additional emerging preprint was used only as contextual evidence. A peer-reviewed-only sensitivity check yields **136 formal reports** and **71 comparative reports**; none of the three cross-regime findings depends on a preprint as its sole support.
+<p align="center">
+<img src="Assets/figures/Fig2.png" width="620"/>
+</p>
+<h5 align=center>PRISMA flow from database search to the final coded evidence base.</h5>
 
-## Main synthesis
+## Framework and Taxonomy
+**DRL4CONBOTS** is a system-level evidence map for deep reinforcement learning in construction robotics. Instead of ranking algorithms by task success alone, it interprets what each reported robotic system can credibly claim based on its task regime, learning formulation, runtime authority, runtime assurance, and validation exposure.
 
-The review supports three cross-regime findings:
+The review uses five coupled dimensions:
 
-1. the technical relevance of observations, action abstractions, objectives, training pathways, and recovery strategies varies with the governing failure physics;
-2. reported performance generally belongs to the complete robot--learning--control configuration because learned outputs recur within planners, controllers, operator actions, and supervisory logic; and
-3. representative hardware evaluation does not by itself establish execution-time protection, intervention, recovery, or sustained workflow integration.
+- **A1. Competency regime:** earthwork, assembly, lifting, additive/surface processing, or navigation/logistics.
+- **A2. Learning formulation:** observation interface, action abstraction, decision formalism, objective specification, and training pathway.
+- **A3. Runtime authority:** who senses, proposes, arbitrates, and executes robot behavior.
+- **A4. Runtime assurance:** whether execution-time safeguards, constraints, monitors, or fallback layers are disclosed.
+- **A5. Validation exposure:** where behavior is tested, from simulation-only evaluation to sustained field deployment.
 
-## Repository contents
+<p align="center">
+<img src="Assets/figures/Fig6.png" width="760"/>
+</p>
+<h5 align=center>Five construction-robotics competency regimes used to organize task-specific evidence and deployment bottlenecks.</h5>
 
-- [`docs/index.html`](docs/index.html): current interactive overview;
-- [`evidence/CURRENT_RELEASE_2026-08-10.md`](evidence/CURRENT_RELEASE_2026-08-10.md): release manifest and retired-result notice;
-- [`evidence/DISCOVERY_INVENTORY_LINEAGE_2026-08-09.md`](evidence/DISCOVERY_INVENTORY_LINEAGE_2026-08-09.md): count lineage for the current systematic review;
-- [`evidence/UPDATE_SEARCH_LOG_2026-08-09.md`](evidence/UPDATE_SEARCH_LOG_2026-08-09.md): reproducible May--August update summary;
-- [`evidence/reference_index_166_2026-08-10.csv`](evidence/reference_index_166_2026-08-10.csv): low-inference bibliographic index of the 166 sources discussed;
-- [`LEGACY_ASSETS_NOTICE.md`](LEGACY_ASSETS_NOTICE.md): interpretation rules for historical repository assets.
+### Methodology Figures
 
-## Figure rights
+<p align="center">
+<img src="Assets/figures/Fig3.png" width="760"/>
+</p>
+<h5 align=center>Methodological translation logic: reported task outcomes are interpreted as bounded deployment-relevant claim scope through the five-axis framework.</h5>
 
-The current manuscript's representative regime plates are author-drawn vector syntheses. No third-party image is reproduced or adapted in those active figures. Earlier photographic or screenshot-based composites are internal working materials and are not release or submission assets.
+
+## Evidence Diagnostic
+A cross-axis view of runtime-assurance disclosure and validation exposure across competency regimes.
+
+<p align="center">
+<img src="Assets/cross_axis_evidence_trend.png" width="760"/>
+</p>
+<h5 align=center>Runtime assurance (A4) against validation exposure (A5), with validation-exposure composition by competency regime.</h5>
+
+## Representative Papers by Category
+Selected papers are grouped by the five competency regimes used in the DRL4CONBOTS framework.
+
+<details open>
+<summary><strong>Earthwork and Material Processing</strong> - 36 primary instances</summary>
+
+#### **Earthwork and Material Processing**
+*Function: Learn excavation, grading, loading, material handling, and machine-level interaction where soil, rock, traction, tool load, and material-state evolution dominate claim scope.*
+
+- **Near-operational material handling**
+    - **[Large-Scale Robotic Material Handling: Learning, Planning, and Control](https://doi.org/10.1109/TFR.2026.3662619)**. *Spinelli, F. A. et al.* **[IEEE TFR 2026]**.
+        - *Highlight: The only primary instance reaching EVL L4 in the current synthesis; combines learning, planning, real-machine material handling, and disclosed runtime constraints.*
+- **Full-scale excavation and loading**
+    - **[Reinforcement Learning-Based Bucket Filling for Autonomous Excavation](https://doi.org/10.1109/TFR.2024.3432508)**. *Egli, P. et al.* **[IEEE TFR 2024]**.
+        - *Highlight: Connects randomized simulation with full-size excavation and bucket-filling evidence.*
+    - **[Automatic Loading of Unknown Material with a Wheel Loader Using Reinforcement Learning](https://doi.org/10.1109/ICRA57147.2024.10610221)**. *Eriksson, D. et al.* **[ICRA 2024]**.
+        - *Highlight: Studies online material adaptation on a 24-tonne wheel loader under real-machine loading conditions.*
+- **Safety-aware excavation control**
+    - **[Safe reinforcement learning for tracking control of uncertain hydraulic excavators](https://doi.org/10.1007/s11071-025-11500-w)**. *Chen, K. et al.* **[Nonlinear Dynamics 2025]**.
+        - *Highlight: Uses safe-RL tracking logic for uncertain hydraulic excavator control and is one of the few AM3-coded primary instances.*
+
+</details>
+
+<details>
+<summary><strong>Structural Assembly and Installation</strong> - 18 primary instances</summary>
+
+#### **Structural Assembly and Installation**
+*Function: Learn tolerance-sensitive placement, insertion, joining, tactile correction, and installation where small pose errors can become jamming, wedging, surface damage, or contact-mode failures.*
+
+- **Contact-rich timber and architectural assembly**
+    - **[Robotic assembly of timber joints using reinforcement learning](https://doi.org/10.1016/j.autcon.2021.103569)**. *Apolinarska, A. A. et al.* **[Automation in Construction 2021]**.
+        - *Highlight: Combines simulation training, force/torque sensing, and physical lap-joint validation.*
+    - **[Robotic architectural assembly with tactile skills: Simulation and optimization](https://doi.org/10.1016/j.autcon.2021.104006)**. *Belousov, B. et al.* **[Automation in Construction 2022]**.
+        - *Highlight: Shows why tactile simulation fidelity matters for modular assembly and contact-rich construction tasks.*
+- **Installation and tactile transfer**
+    - **[Visual-tactile learning of robotic cable-in-duct installation skills](https://doi.org/10.1016/j.autcon.2024.105905)**. *Duan, B. et al.* **[Automation in Construction 2025]**.
+        - *Highlight: Connects SAC control, tactile sim-to-real alignment, and physical cable-in-duct trials.*
+    - **[Training of construction robots using imitation learning and environmental rewards](https://doi.org/10.1111/mice.13394)**. *Duan, K. et al.* **[Computer-Aided Civil and Infrastructure Engineering 2025]**.
+        - *Highlight: Combines imitation learning and environmental rewards for installation-oriented construction robot training.*
+
+</details>
+
+<details>
+<summary><strong>Material Placement and Lifting</strong> - 8 primary instances</summary>
+
+#### **Material Placement and Lifting**
+*Function: Learn crane, hoist, lift-planning, and suspended-payload behavior where delayed oscillatory dynamics, swept-volume risk, payload variability, and site governance shape readiness claims.*
+
+- **Construction-representative crane control**
+    - **[Autonomous construction framework for crane control with enhanced soft actor-critic algorithm and real-time progress monitoring](https://doi.org/10.1111/mice.13427)**. *Xiao, Y. et al.* **[Computer-Aided Civil and Infrastructure Engineering 2025]**.
+        - *Highlight: The strongest disclosed lifting-regime validation anchor in the primary set.*
+- **Crane dynamics and stabilization**
+    - **[Controlling a double-pendulum crane by combining reinforcement learning and conventional control](https://doi.org/10.23919/ACC55779.2023.10156044)**. *Eaglin, G. et al.* **[ACC 2023]**.
+        - *Highlight: Demonstrates why hybrid conventional-control-plus-RL structures can outperform RL-only control in crane dynamics.*
+    - **[Online reinforcement learning with passivity-based stabilizing term for real time overhead crane control without knowledge of the system model](https://doi.org/10.1016/j.ymssp.2021.108372)**. *Zhang, M. et al.* **[MSSP 2022]**.
+        - *Highlight: Uses passivity-based stabilization to structure online RL for overhead crane control.*
+- **Lift planning**
+    - **[Reinforcement learning-based simulation and automation for tower crane 3D lift planning](https://doi.org/10.1016/j.autcon.2022.104620)**. *Cho, S. et al.* **[Automation in Construction 2022]**.
+        - *Highlight: Evaluates tower-crane lift planning in a real-scale virtual site and compares simulated planning behavior with field-related traces.*
+
+</details>
+
+<details>
+<summary><strong>Additive Manufacturing and Surface Processing</strong> - 2 primary instances</summary>
+
+#### **Additive Manufacturing and Surface Processing**
+*Function: Learn process control and path planning where material rheology, tool wear, cumulative geometry deviation, and irreversible process defects shape the validation burden.*
+
+- **Robotic additive manufacturing**
+    - **[Autonomous robotic additive manufacturing through distributed model-free deep reinforcement learning in computational design environments](https://doi.org/10.1007/s41693-022-00069-0)**. *Felbrich, B. et al.* **[Construction Robotics 2022]**.
+        - *Highlight: Uses distributed model-free DRL for robotic additive manufacturing in computational design environments.*
+- **Concrete 3D printing**
+    - **[Reinforcement learning-based continuous path planning and automated concrete 3D printing of complex hollow components](https://doi.org/10.1016/j.autcon.2025.106290)**. *Wang, X. et al.* **[Automation in Construction 2025]**.
+        - *Highlight: Optimizes continuous fill-path sequencing for concrete 3D printing of complex hollow components.*
+
+</details>
+
+<details>
+<summary><strong>Navigation, Layout, and Logistics Support</strong> - 11 primary instances</summary>
+
+#### **Navigation, Layout, and Logistics Support**
+*Function: Learn mobility, routing, worker-aware planning, layout support, and logistics decisions where human co-presence, congestion, occlusion, handover, and governance determine claim scope.*
+
+- **Safety-constrained construction HRC**
+    - **[Safety-constrained Deep Reinforcement Learning control for human-robot collaboration in construction](https://doi.org/10.1016/j.autcon.2025.106130)**. *Duan, K. et al.* **[Automation in Construction 2025]**.
+        - *Highlight: One of the few navigation/HRC instances with explicit safety-constrained runtime evidence.*
+- **Scene-graph and bulldozer navigation**
+    - **[Deep reinforcement learning coupled with topological scene graph for dynamic path planning of autonomous bulldozer in complex earthwork construction](https://doi.org/10.1016/j.autcon.2025.106617)**. *Gao, H. et al.* **[Automation in Construction 2026]**.
+        - *Highlight: Combines topological scene graphs and DRL for dynamic bulldozer path planning in complex earthwork settings.*
+- **Worker-aware planning**
+    - **[Prediction-based path planning for safe and efficient human-robot collaboration in construction via deep reinforcement learning](https://doi.org/10.1061/(ASCE)CP.1943-5487.0001056)**. *Cai, J. et al.* **[Journal of Computing in Civil Engineering 2023]**.
+        - *Highlight: Combines worker-location prediction with DQN path planning for construction HRC scenarios.*
+
+</details>
+
+## Evidence Trends
+The current evidence base shows that real-world readiness cannot be inferred from algorithm labels, hardware presence, or field-like demonstrations alone.
+
+<p align="center">
+<img src="Assets/figures/Fig12.png" width="760"/>
+</p>
+<h5 align=center>Evidence-closure map for deployment-relevant claims in construction robotics.</h5>
+
+Key findings from the primary synthesis set:
+
+- **Authority-assurance decoupling:** **45/75** primary instances are AM0, and **60/75** remain within AM0-AM1.
+- **Simulation without safeguards:** **35/75** primary instances are simultaneously AM0 and EVL L0.
+- **Exposure-assurance divergence:** **20/75** primary instances reach EVL L3 or higher, but only **1** reaches EVL L4 and **0** reach EVL L5.
+
+## Primary Evidence Regimes
+
+| **Regime** | **Primary instances** | **Main bottleneck** |
+|:--|:--:|:--|
+| Earthwork and Material Processing | 36/75 | Long-horizon exposure to soil variability, muck, resistance discontinuities, and intervention histories |
+| Structural Assembly and Installation | 18/75 | Tolerance variation, contact-rich disturbances, access constraints, and intervention reporting |
+| Material Placement and Lifting | 8/75 | Workflow-coupled lift validation, swing handling, disturbance coverage, and governance |
+| Additive Manufacturing and Surface Processing | 2/75 | Scale-dependent process physics, material rheology, and end-to-end process assurance |
+| Navigation, Layout, and Logistics Support | 11/75 | Mixed-traffic exposure, handover, communication stress, recovery, and site governance |
 
 ## Citation
+The manuscript is currently under review in Automation in Construction. Citation metadata will be updated after preprint, acceptance, or journal publication.
 
 ```bibtex
-@article{jin2026drlconstructionrobotics,
-  title   = {Deep Reinforcement Learning for Construction Robotics: A System-Level Taxonomy and Evidence Map toward Real-World Readiness},
-  author  = {Jin, Zekai and Wang, Huiguang and Tang, Yihong and Dong, Zhen and Feng, Chen and Shao, Yi},
-  journal = {Manuscript prepared for Automation in Construction},
-  year    = {2026}
+@misc{jin2026drl4conbots,
+  title        = {Deep Reinforcement Learning for Construction Robotics: A System-Level Taxonomy and Evidence Map toward Real-World Readiness},
+  author       = {Jin, Zekai and Wang, Huiguang and Tang, Yihong and Dong, Zhen and Feng, Chen and Shao, Yi},
+  year         = {2026},
+  howpublished = {Companion repository for a manuscript under review in Automation in Construction},
+  url          = {https://github.com/ZekaiJ/DRL4CONBOTS}
 }
 ```
 
-## License and contact
-
-Repository-authored code and text are released under the repository license. Copyright in cited publications remains with their respective rights holders. Contact: `zekai.jin@mail.mcgill.ca`.
+## License & contact
+Released under the [MIT](LICENSE) license. Questions, feedback, or collaboration: zekai.jin@mail.mcgill.ca
