@@ -1,4 +1,4 @@
-<h1 align="center">From Task Success to Recoverable Operation</h1>
+<h1 align="center">From Learned Decisions to Continued Operation</h1>
 <h3 align="center">A Systematic Review of Deep Reinforcement Learning for Construction Robotics</h3>
 
 <p align="center">
@@ -121,7 +121,7 @@ The manuscript is in revision. Bibliographic metadata will be replaced with the 
 
 ```bibtex
 @misc{jin2026recoverableconstructiondrl,
-  title        = {From Task Success to Recoverable Operation: A Systematic Review of Deep Reinforcement Learning for Construction Robotics},
+  title        = {From Learned Decisions to Continued Operation: A Systematic Review of Deep Reinforcement Learning for Construction Robotics},
   author       = {Jin, Zekai and Wang, Huiguang and Tang, Yihong and Dong, Zhen and Feng, Chen and Shao, Yi},
   year         = {2026},
   note         = {Manuscript in revision for Automation in Construction},
